@@ -5,24 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rein_rx86</title>
 
+<!-- Fuente moderna -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
 <!-- Iconos -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(180deg,#0f0f0f,#1a1a1a);
+    font-family: 'Poppins', sans-serif;
+    background-image: url("fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color:white;
     text-align:center;
 }
 
+/* Contenedor tipo vidrio */
 .container{
     max-width:500px;
-    margin:auto;
-    padding:40px 20px;
+    margin:40px auto;
+    padding:40px 25px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius:20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.7);
 }
 
+/* Imagen perfil */
 .profile-img{
     width:140px;
     height:140px;
@@ -32,17 +46,33 @@ body{
     margin-bottom:20px;
 }
 
+/* Título */
 h1{
     margin:10px 0;
+    font-size:32px;
+    font-weight:800;
+    text-shadow: 0 0 15px rgba(0,0,0,0.9);
 }
 
+/* Subtítulo */
+p{
+    font-size:16px;
+    font-weight:400;
+    opacity:0.9;
+    text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+/* Títulos de sección */
 .section-title{
     margin-top:35px;
-    font-size:18px;
-    opacity:0.7;
-    letter-spacing:1px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:0.85;
 }
 
+/* Links */
 .links{
     margin-top:15px;
 }
@@ -54,17 +84,22 @@ h1{
     gap:12px;
     margin:12px 0;
     padding:14px;
-    background:#1f1f1f;
-    border-radius:12px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:14px;
     text-decoration:none;
     color:white;
-    font-size:18px;
-    transition:0.3s;
+    font-size:17px;
+    font-weight:600;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition:0.3s ease;
 }
 
 .link-btn:hover{
     background:#ff4da6;
-    transform:scale(1.03);
+    transform:scale(1.05);
+    box-shadow:0 0 20px #ff4da6;
 }
 
 .link-btn i{
@@ -80,7 +115,6 @@ h1{
     <!-- FOTO DE PERFIL -->
     <img src="icon_rein2.png" class="profile-img" alt="Rein_rx86">
 
-
     <h1>Rein_rx86</h1>
     <p>Ilustración • Diseño • Modelado 3D</p>
 
@@ -88,6 +122,10 @@ h1{
     <div class="section-title">🌐 Redes Oficiales</div>
 
     <div class="links">
+
+        <a href="https://www.twitch.tv/rein_rx86" target="_blank" class="link-btn">
+            <i class="fab fa-twitch"></i> Twitch
+        </a>
 
         <a href="https://www.instagram.com/rein_rx86/" target="_blank" class="link-btn">
             <i class="fab fa-instagram"></i> Instagram
