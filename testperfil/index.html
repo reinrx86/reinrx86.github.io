@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rein_rx86</title>
+
+<!-- 🔥 FAVICON LLAMA -->
+<link rel="icon" type="image/png" href="llama.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:url("fondo.png") center/cover fixed;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    max-width:500px;
+    margin:40px auto;
+    padding:40px 25px;
+    background:rgba(0,0,0,0.65);
+    backdrop-filter:blur(8px);
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(0,0,0,0.7);
+}
+
+/* ===== FOTO PERFIL ===== */
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+    padding:4px;
+    background:linear-gradient(45deg,#ff0000,#ff4500,#ff7a00,#ff0000);
+    animation:fireGlow 2s infinite alternate;
+}
+
+@keyframes fireGlow{
+    from{
+        box-shadow:
+            0 0 10px #ff3c00,
+            0 0 25px rgba(255,60,0,.6),
+            0 0 45px rgba(255,120,0,.4);
+    }
+    to{
+        box-shadow:
+            0 0 18px #ff6a00,
+            0 0 35px rgba(255,80,0,.9),
+            0 0 60px rgba(255,120,0,.7);
+    }
+}
+
+h1{
+    margin:10px 0;
+    font-size:32px;
+    font-weight:800;
+}
+
+.section-title{
+    margin-top:35px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:0.85;
+}
+
+.links{ margin-top:15px; }
+
+/* ===== BOTONES ===== */
+.link-btn{
+    display:flex;
+    align-items:center;
+    margin:12px 0;
+    padding:14px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:14px;
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    backdrop-filter:blur(6px);
+    transition:0.3s ease;
+}
+
+.link-btn:hover{ transform:scale(1.05); }
+
+/* icono fijo izquierda */
+.link-btn i{
+    width:30px;
+    text-align:center;
+    font-size:20px;
+}
+
+/* texto centrado real */
+.link-btn span{
+    flex:1;
+    text-align:center;
+}
+
+/* ===== COLORES ICONOS ===== */
+.twitch i{ color:#9146FF; }
+.instagram i{ color:#DD2A7B; }
+.reddit i{ color:#FF4500; }
+.cults i{ color:#0099ff; }
+.kofi i{ color:#FF5E5B; }
+.discord i{ color:#5865F2; }
+
+/* hover → icono blanco */
+.link-btn:hover i{ color:white; }
+
+/* ===== HOVER COLORES BOTONES (los tuyos intactos) ===== */
+.twitch:hover{ background:#9146FF; box-shadow:0 0 20px #9146FF; }
+.instagram:hover{
+    background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
+    box-shadow:0 0 20px #DD2A7B;
+}
+.reddit:hover{ background:#FF4500; box-shadow:0 0 20px #FF4500; }
+.cults:hover{ background:#0099ff; box-shadow:0 0 20px #0099ff; }
+.kofi:hover{ background:#FF5E5B; box-shadow:0 0 20px #FF5E5B; }
+.discord:hover{ background:#5865F2; box-shadow:0 0 20px #5865F2; }
+
+/* ===== MODAL ===== */
+.modal-bg{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+}
+
+.modal{
+    background:#111;
+    padding:30px;
+    border-radius:18px;
+    max-width:420px;
+    width:90%;
+    box-shadow:0 0 40px rgba(0,0,0,0.8);
+    animation:fadeIn .25s ease;
+}
+
+.modal h2{ color:#FF4500; }
+
+.modal p{
+    opacity:.9;
+    line-height:1.5em;
+}
+
+.modal-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:12px;
+    justify-content:center;
+}
+
+.modal-buttons button{
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.btn-enter{
+    background:#FF4500;
+    color:white;
+}
+.btn-enter:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #FF4500;
+}
+
+.btn-cancel{
+    background:#444;
+    color:white;
+}
+.btn-cancel:hover{ background:#666; }
+
+@keyframes fadeIn{
+    from{opacity:0; transform:scale(.9);}
+    to{opacity:1; transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="icon_rein2.png" class="profile-img">
+    <h1>Rein_rx86</h1>
+
+    <div class="section-title">🌐 Redes Oficiales</div>
+
+    <div class="links">
+
+        <a href="https://www.twitch.tv/rein_rx86" target="_blank" class="link-btn twitch">
+            <i class="fab fa-twitch"></i>
+            <span>Twitch</span>
+        </a>
+
+        <a href="https://www.instagram.com/rein_rx86/" target="_blank" class="link-btn instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+
+        <a href="#" class="link-btn reddit" onclick="openRedditModal(event)">
+            <i class="fab fa-reddit"></i>
+            <span>Reddit</span>
+        </a>
+
+        <a href="https://cults3d.com/en/users/Rein_rx86/3d-models" target="_blank" class="link-btn cults">
+            <i class="fas fa-cube"></i>
+            <span>Cults3D</span>
+        </a>
+
+        <a href="https://ko-fi.com/rein_rx86" target="_blank" class="link-btn kofi">
+            <i class="fas fa-mug-hot"></i>
+            <span>Ko-fi</span>
+        </a>
+
+    </div>
+
+    <div class="section-title">💬 Comunidad</div>
+
+    <div class="links">
+        <a href="https://discord.gg/3geFhjwQVH" target="_blank" class="link-btn discord">
+            <i class="fab fa-discord"></i>
+            <span>Discord</span>
+        </a>
+    </div>
+
+</div>
+
+<div class="modal-bg" id="redditModal">
+    <div class="modal">
+        <h2>⚠ Contenido NSFW</h2>
+        <p>
+        Este perfil puede contener material para adultos.<br>
+        Debes ser mayor de edad para continuar.
+        </p>
+
+        <div class="modal-buttons">
+            <button class="btn-enter" onclick="goToReddit()">Soy mayor de edad</button>
+            <button class="btn-cancel" onclick="closeRedditModal()">Salir</button>
+        </div>
+    </div>
+</div>
+
+<script>
+function openRedditModal(e){
+    e.preventDefault();
+    document.getElementById("redditModal").style.display="flex";
+}
+
+function closeRedditModal(){
+    document.getElementById("redditModal").style.display="none";
+}
+
+function goToReddit(){
+    window.open("https://www.reddit.com/user/Rein_rx86/","_blank");
+    closeRedditModal();
+}
+</script>
+
+</body>
+</html>
