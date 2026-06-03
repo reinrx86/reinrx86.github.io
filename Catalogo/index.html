@@ -3,263 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Catálogo de Productos</title>
-
 <meta name="description" content="Catálogo online de productos con filtros y ofertas">
-
 <script src="datos.js"></script>
-
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-}
-
-header{
-    background:#1f2937;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-header p{
-    margin-top:10px;
-}
-
-.barra{
-    background:white;
-    padding:15px;
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    box-shadow:0 2px 5px rgba(0,0,0,.1);
-}
-
-.barra select,
-.barra input{
-    padding:8px;
-}
-
-#catalogo{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-    gap:20px;
-    padding:20px;
-}
-
-.producto{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.galeria{
-    display:flex;
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-}
-
-.galeria img{
-    width:100%;
-    min-width:100%;
-    height:220px;
-    object-fit:cover;
-    scroll-snap-align:start;
-}
-
-.info{
-    padding:15px;
-}
-
-.info h2{
-    margin-bottom:10px;
-}
-
-.info p{
-    margin-bottom:8px;
-}
-
-.precio-anterior{
-    color:red;
-    text-decoration:line-through;
-}
-
-.precio-actual{
-    color:green;
-    font-size:24px;
-    font-weight:bold;
-}
-
-.oferta{
-    display:inline-block;
-    background:#ff5722;
-    color:white;
-    padding:5px 10px;
-    border-radius:5px;
-    margin-top:10px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f4f4}
+header{background:#2c1810;color:#fff;text-align:center;padding:24px}
+.barra{position:sticky;top:0;background:#fff;padding:12px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,.1);z-index:10}
+.barra input,.barra select,.barra button{padding:10px;border-radius:8px;border:1px solid #ccc}
+#btnOfertas{background:#d2691e;color:#fff;border:none;cursor:pointer}
+#btnOfertas.activo{background:#198754}
+#catalogo{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:15px;padding:20px}
+.producto{background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;transition:.2s;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.producto:hover{transform:translateY(-4px)}
+.producto img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.info{padding:12px}
+.info h3{font-size:16px;margin-bottom:6px}
+.info p{font-size:13px;margin-bottom:5px}
+.precio-anterior{text-decoration:line-through;color:#c00}
+.precio-actual{font-size:20px;color:#198754;font-weight:bold}
+.oferta{display:inline-block;background:#ff6b35;color:#fff;padding:4px 8px;border-radius:6px;font-size:12px}
+.puntos{display:flex;justify-content:center;gap:5px;padding:8px}
+.punto{width:8px;height:8px;border-radius:50%;background:#bbb}
+.punto.activo{background:#333}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);justify-content:center;align-items:center;z-index:1000}
+.modal-content{background:#fff;padding:15px;border-radius:12px;max-width:900px;width:90%}
+.modal img{width:100%;max-height:70vh;object-fit:contain}
+.controls{text-align:center;margin-top:10px}
+.controls button{padding:10px 15px;margin:0 5px}
+.close{float:right;font-size:28px;cursor:pointer}
 </style>
 </head>
 <body>
-
 <header>
-    <h1>Catálogo de Productos</h1>
-    <p>Encuentra las mejores ofertas</p>
+<h1>Catálogo de Productos</h1>
+<p>Encuentra las mejores ofertas</p>
 </header>
 
 <div class="barra">
-
-    <label>
-        Ofertas
-        <input type="checkbox" id="soloOfertas">
-    </label>
-
-    <select id="ordenPrecio">
-        <option value="">Ordenar según precio</option>
-        <option value="asc">Menor a Mayor</option>
-        <option value="desc">Mayor a Menor</option>
-    </select>
-
-    <select id="categoria">
-        <option value="">Todas las categorías</option>
-    </select>
-
+<input id="buscar" placeholder="Buscar producto">
+<button id="btnOfertas">Ofertas</button>
+<select id="ordenPrecio">
+<option value="">Ordenar precio</option>
+<option value="asc">Menor a Mayor</option>
+<option value="desc">Mayor a Menor</option>
+</select>
+<select id="categoria"><option value="">Todas las categorías</option></select>
 </div>
 
 <div id="catalogo"></div>
 
-<script>
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<img id="modalImg">
+<div class="controls">
+<button id="prev">◀</button>
+<button id="next">▶</button>
+</div>
+</div>
+</div>
 
-const catalogo = document.getElementById("catalogo");
-const categoriaSelect = document.getElementById("categoria");
+<script>
+const catalogo=document.getElementById("catalogo");
+const categoriaSelect=document.getElementById("categoria");
+let soloOfertas=false;
+let imagenesActuales=[];
+let indice=0;
+
+function formatoPrecio(n){
+ return "$"+Number(n).toLocaleString("es-CL");
+}
 
 function cargarCategorias(){
-
-    const categorias = [...new Set(
-        productos.map(producto => producto.categoria)
-    )];
-
-    categorias.forEach(categoria => {
-
-        const option = document.createElement("option");
-
-        option.value = categoria;
-        option.textContent = categoria;
-
-        categoriaSelect.appendChild(option);
-    });
+ const cats=[...new Set(productos.map(p=>p.categoria))];
+ cats.forEach(c=>{
+  const op=document.createElement("option");
+  op.value=c; op.textContent=c;
+  categoriaSelect.appendChild(op);
+ });
 }
 
 function mostrarProductos(){
+ let lista=[...productos];
+ const texto=document.getElementById("buscar").value.toLowerCase();
 
-    let lista = [...productos];
+ if(texto) lista=lista.filter(p=>p.titulo.toLowerCase().includes(texto));
+ if(categoriaSelect.value) lista=lista.filter(p=>p.categoria===categoriaSelect.value);
+ if(soloOfertas) lista=lista.filter(p=>p.precioActual<p.precioAnterior);
 
-    const categoria = categoriaSelect.value;
-    const orden = document.getElementById("ordenPrecio").value;
-    const ofertas = document.getElementById("soloOfertas").checked;
+ const orden=document.getElementById("ordenPrecio").value;
+ if(orden==="asc") lista.sort((a,b)=>a.precioActual-b.precioActual);
+ if(orden==="desc") lista.sort((a,b)=>b.precioActual-a.precioActual);
 
-    if(categoria){
-        lista = lista.filter(
-            producto => producto.categoria === categoria
-        );
-    }
+ catalogo.innerHTML="";
 
-    if(ofertas){
-        lista = lista.filter(
-            producto => producto.precioActual < producto.precioAnterior
-        );
-    }
-
-    if(orden === "asc"){
-        lista.sort(
-            (a,b) => a.precioActual - b.precioActual
-        );
-    }
-
-    if(orden === "desc"){
-        lista.sort(
-            (a,b) => b.precioActual - a.precioActual
-        );
-    }
-
-    catalogo.innerHTML = "";
-
-    lista.forEach(producto => {
-
-        catalogo.innerHTML += `
-        <div class="producto">
-
-            <div class="galeria">
-                ${producto.imagenes.map(imagen =>
-                    `<img src="${imagen}" alt="${producto.titulo}">`
-                ).join("")}
-            </div>
-
-            <div class="info">
-
-                <h2>${producto.titulo}</h2>
-
-                <p>${producto.descripcion}</p>
-
-                <p><strong>ID:</strong> ${producto.id}</p>
-
-                <p><strong>Categoría:</strong> ${producto.categoria}</p>
-
-                <p>
-                    <strong>Dimensiones:</strong>
-                    ${producto.dimensiones.altura} ×
-                    ${producto.dimensiones.ancho} ×
-                    ${producto.dimensiones.fondo}
-                </p>
-
-                <p class="precio-anterior">
-                    $${producto.precioAnterior}
-                </p>
-
-                <p class="precio-actual">
-                    $${producto.precioActual}
-                </p>
-
-                ${
-                    producto.precioActual < producto.precioAnterior
-                    ? '<span class="oferta">OFERTA</span>'
-                    : ''
-                }
-
-            </div>
-
-        </div>
-        `;
-    });
+ lista.forEach(p=>{
+  const descuento=Math.round((1-p.precioActual/p.precioAnterior)*100);
+  catalogo.innerHTML+=`
+  <div class="producto" onclick="abrirProducto(${p.id})">
+    <img src="${p.imagenes[0]}" alt="">
+    <div class="puntos">
+      <span class="punto activo"></span>
+      <span class="punto"></span>
+      <span class="punto"></span>
+    </div>
+    <div class="info">
+      <h3>${p.titulo}</h3>
+      <p>${p.categoria}</p>
+      <p class="precio-anterior">${formatoPrecio(p.precioAnterior)}</p>
+      <p class="precio-actual">${formatoPrecio(p.precioActual)}</p>
+      ${p.precioActual<p.precioAnterior?`<span class="oferta">-${descuento}%</span>`:""}
+    </div>
+  </div>`;
+ });
 }
 
-document
-.getElementById("ordenPrecio")
-.addEventListener("change", mostrarProductos);
+function abrirProducto(id){
+ const p=productos.find(x=>x.id===id);
+ imagenesActuales=p.imagenes;
+ indice=0;
+ document.getElementById("modalImg").src=imagenesActuales[0];
+ document.getElementById("modal").style.display="flex";
+}
 
-document
-.getElementById("categoria")
-.addEventListener("change", mostrarProductos);
+document.getElementById("btnOfertas").onclick=()=>{
+ soloOfertas=!soloOfertas;
+ document.getElementById("btnOfertas").classList.toggle("activo");
+ mostrarProductos();
+};
 
-document
-.getElementById("soloOfertas")
-.addEventListener("change", mostrarProductos);
+document.getElementById("buscar").addEventListener("input",mostrarProductos);
+document.getElementById("ordenPrecio").addEventListener("change",mostrarProductos);
+categoriaSelect.addEventListener("change",mostrarProductos);
+
+document.querySelector(".close").onclick=()=>document.getElementById("modal").style.display="none";
+document.getElementById("prev").onclick=()=>{
+ indice=(indice-1+imagenesActuales.length)%imagenesActuales.length;
+ document.getElementById("modalImg").src=imagenesActuales[indice];
+};
+document.getElementById("next").onclick=()=>{
+ indice=(indice+1)%imagenesActuales.length;
+ document.getElementById("modalImg").src=imagenesActuales[indice];
+};
 
 cargarCategorias();
 mostrarProductos();
-
 </script>
-
 </body>
 </html>

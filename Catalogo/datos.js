@@ -213,6 +213,6 @@ const productos = [
     },
     categoria: "Billeteras",
     precioAnterior: 18000,
-    precioActual: 14990
+    precioActual: 15990
 }
 ]; 
