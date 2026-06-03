@@ -8,31 +8,44 @@
 
 <meta name="description" content="Catálogo online de productos con filtros y ofertas">
 
+<script src="datos.js"></script>
+
 <style>
-body{
-    font-family: Arial, sans-serif;
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
     background:#f5f5f5;
 }
 
 header{
     background:#1f2937;
     color:white;
-    padding:20px;
     text-align:center;
+    padding:25px;
+}
+
+header p{
+    margin-top:10px;
 }
 
 .barra{
     background:white;
     padding:15px;
     display:flex;
-    gap:15px;
     justify-content:center;
+    gap:15px;
     flex-wrap:wrap;
     box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
 
-select,input{
+.barra select,
+.barra input{
     padding:8px;
 }
 
@@ -53,6 +66,7 @@ select,input{
 .galeria{
     display:flex;
     overflow-x:auto;
+    scroll-snap-type:x mandatory;
 }
 
 .galeria img{
@@ -60,29 +74,41 @@ select,input{
     min-width:100%;
     height:220px;
     object-fit:cover;
+    scroll-snap-align:start;
 }
 
 .info{
     padding:15px;
 }
 
+.info h2{
+    margin-bottom:10px;
+}
+
+.info p{
+    margin-bottom:8px;
+}
+
 .precio-anterior{
-    text-decoration:line-through;
     color:red;
+    text-decoration:line-through;
 }
 
 .precio-actual{
-    font-size:24px;
     color:green;
+    font-size:24px;
     font-weight:bold;
 }
 
 .oferta{
+    display:inline-block;
     background:#ff5722;
     color:white;
     padding:5px 10px;
     border-radius:5px;
+    margin-top:10px;
 }
+
 </style>
 </head>
 <body>
@@ -113,26 +139,29 @@ select,input{
 
 <div id="catalogo"></div>
 
-<!-- Carga los productos -->
-<script src="datos.js"></script>
-
 <script>
 
 const catalogo = document.getElementById("catalogo");
 const categoriaSelect = document.getElementById("categoria");
 
-function cargarCategorias() {
-    const categorias = [...new Set(productos.map(p => p.categoria))];
+function cargarCategorias(){
 
-    categorias.forEach(cat => {
+    const categorias = [...new Set(
+        productos.map(producto => producto.categoria)
+    )];
+
+    categorias.forEach(categoria => {
+
         const option = document.createElement("option");
-        option.value = cat;
-        option.textContent = cat;
+
+        option.value = categoria;
+        option.textContent = categoria;
+
         categoriaSelect.appendChild(option);
     });
 }
 
-function mostrarProductos() {
+function mostrarProductos(){
 
     let lista = [...productos];
 
@@ -141,33 +170,39 @@ function mostrarProductos() {
     const ofertas = document.getElementById("soloOfertas").checked;
 
     if(categoria){
-        lista = lista.filter(p => p.categoria === categoria);
+        lista = lista.filter(
+            producto => producto.categoria === categoria
+        );
     }
 
     if(ofertas){
         lista = lista.filter(
-            p => p.precioActual < p.precioAnterior
+            producto => producto.precioActual < producto.precioAnterior
         );
     }
 
     if(orden === "asc"){
-        lista.sort((a,b)=>a.precioActual-b.precioActual);
+        lista.sort(
+            (a,b) => a.precioActual - b.precioActual
+        );
     }
 
     if(orden === "desc"){
-        lista.sort((a,b)=>b.precioActual-a.precioActual);
+        lista.sort(
+            (a,b) => b.precioActual - a.precioActual
+        );
     }
 
     catalogo.innerHTML = "";
 
-    lista.forEach(producto=>{
+    lista.forEach(producto => {
 
         catalogo.innerHTML += `
         <div class="producto">
 
             <div class="galeria">
-                ${producto.imagenes.map(img =>
-                    `<img src="${img}" alt="${producto.titulo}">`
+                ${producto.imagenes.map(imagen =>
+                    `<img src="${imagen}" alt="${producto.titulo}">`
                 ).join("")}
             </div>
 
@@ -177,21 +212,14 @@ function mostrarProductos() {
 
                 <p>${producto.descripcion}</p>
 
-                <p>
-                    <strong>ID:</strong> ${producto.id}
-                </p>
+                <p><strong>ID:</strong> ${producto.id}</p>
 
-                <p>
-                    <strong>Categoría:</strong>
-                    ${producto.categoria}
-                </p>
+                <p><strong>Categoría:</strong> ${producto.categoria}</p>
 
                 <p>
                     <strong>Dimensiones:</strong>
-                    ${producto.dimensiones.altura}
-                    ×
-                    ${producto.dimensiones.ancho}
-                    ×
+                    ${producto.dimensiones.altura} ×
+                    ${producto.dimensiones.ancho} ×
                     ${producto.dimensiones.fondo}
                 </p>
 
@@ -218,15 +246,15 @@ function mostrarProductos() {
 
 document
 .getElementById("ordenPrecio")
-.addEventListener("change",mostrarProductos);
+.addEventListener("change", mostrarProductos);
 
 document
 .getElementById("categoria")
-.addEventListener("change",mostrarProductos);
+.addEventListener("change", mostrarProductos);
 
 document
 .getElementById("soloOfertas")
-.addEventListener("change",mostrarProductos);
+.addEventListener("change", mostrarProductos);
 
 cargarCategorias();
 mostrarProductos();
