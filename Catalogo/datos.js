@@ -15,7 +15,7 @@ const productos = [
     },
     categoria: "Billeteras",
     precioAnterior: 45000,
-    precioActual: 38990
+    precioActual: 45000
 },
 {
     id: 2,
@@ -51,7 +51,7 @@ const productos = [
     },
     categoria: "Bolsos",
     precioAnterior: 99000,
-    precioActual: 84990
+    precioActual: 94990
 },
 {
     id: 4,
@@ -87,7 +87,7 @@ const productos = [
     },
     categoria: "Accesorios",
     precioAnterior: 25000,
-    precioActual: 19990
+    precioActual: 25000
 },
 {
     id: 6,
@@ -105,7 +105,7 @@ const productos = [
     },
     categoria: "Maletines",
     precioAnterior: 160000,
-    precioActual: 145000
+    precioActual: 160000
 },
 {
     id: 7,
@@ -141,7 +141,7 @@ const productos = [
     },
     categoria: "Fundas",
     precioAnterior: 65000,
-    precioActual: 57990
+    precioActual: 65000
 },
 {
     id: 9,
@@ -159,7 +159,7 @@ const productos = [
     },
     categoria: "Papelería",
     precioAnterior: 30000,
-    precioActual: 24990
+    precioActual: 27990
 },
 {
     id: 10,
@@ -177,7 +177,7 @@ const productos = [
     },
     categoria: "Accesorios",
     precioAnterior: 10000,
-    precioActual: 7990
+    precioActual: 10000
 },
 {
     id: 11,
@@ -212,7 +212,7 @@ const productos = [
         fondo: "1 cm"
     },
     categoria: "Billeteras",
-    precioAnterior: 15990,
+    precioAnterior: 18990,
     precioActual: 15990
 }
-]; 
+];
