@@ -215,4 +215,4 @@ const productos = [
     precioAnterior: 18000,
     precioActual: 14990
 }
-];
+]; 
