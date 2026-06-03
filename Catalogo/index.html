@@ -3,275 +3,234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Redes de Rein_rx86</title>
 
-<!-- 🔥 FAVICON LLAMA -->
-<link rel="icon" type="image/png" href="llama.png">
+<title>Catálogo de Productos</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="description" content="Catálogo online de productos con filtros y ofertas">
 
 <style>
 body{
+    font-family: Arial, sans-serif;
     margin:0;
-    font-family:'Poppins',sans-serif;
-    background:url("fondo.png") center/cover fixed;
+    background:#f5f5f5;
+}
+
+header{
+    background:#1f2937;
     color:white;
+    padding:20px;
     text-align:center;
 }
 
-.container{
-    max-width:500px;
-    margin:40px auto;
-    padding:40px 25px;
-    background:rgba(0,0,0,0.65);
-    backdrop-filter:blur(8px);
-    border-radius:20px;
-    box-shadow:0 0 40px rgba(0,0,0,0.7);
-}
-
-/* ===== FOTO PERFIL ===== */
-.profile-img{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:20px;
-    padding:4px;
-    background:linear-gradient(45deg,#ff0000,#ff4500,#ff7a00,#ff0000);
-    animation:fireGlow 2s infinite alternate;
-}
-
-@keyframes fireGlow{
-    from{
-        box-shadow:
-            0 0 10px #ff3c00,
-            0 0 25px rgba(255,60,0,.6),
-            0 0 45px rgba(255,120,0,.4);
-    }
-    to{
-        box-shadow:
-            0 0 18px #ff6a00,
-            0 0 35px rgba(255,80,0,.9),
-            0 0 60px rgba(255,120,0,.7);
-    }
-}
-
-h1{
-    margin:10px 0;
-    font-size:32px;
-    font-weight:800;
-}
-
-.section-title{
-    margin-top:35px;
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    opacity:0.85;
-}
-
-.links{ margin-top:15px; }
-
-/* ===== BOTONES ===== */
-.link-btn{
+.barra{
+    background:white;
+    padding:15px;
     display:flex;
-    align-items:center;
-    margin:12px 0;
-    padding:14px;
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.15);
-    border-radius:14px;
-    text-decoration:none;
-    color:white;
-    font-size:17px;
-    font-weight:600;
-    backdrop-filter:blur(6px);
-    transition:0.3s ease;
-}
-
-.link-btn:hover{ transform:scale(1.05); }
-
-/* icono fijo izquierda */
-.link-btn i{
-    width:30px;
-    text-align:center;
-    font-size:20px;
-}
-
-/* texto centrado real */
-.link-btn span{
-    flex:1;
-    text-align:center;
-}
-
-/* ===== COLORES ICONOS ===== */
-.twitch i{ color:#9146FF; }
-.instagram i{ color:#DD2A7B; }
-.reddit i{ color:#FF4500; }
-.cults i{ color:#0099ff; }
-.kofi i{ color:#FF5E5B; }
-.discord i{ color:#5865F2; }
-
-/* hover → icono blanco */
-.link-btn:hover i{ color:white; }
-
-/* ===== HOVER COLORES BOTONES (los tuyos intactos) ===== */
-.twitch:hover{ background:#9146FF; box-shadow:0 0 20px #9146FF; }
-.instagram:hover{
-    background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4);
-    box-shadow:0 0 20px #DD2A7B;
-}
-.reddit:hover{ background:#FF4500; box-shadow:0 0 20px #FF4500; }
-.cults:hover{ background:#0099ff; box-shadow:0 0 20px #0099ff; }
-.kofi:hover{ background:#FF5E5B; box-shadow:0 0 20px #FF5E5B; }
-.discord:hover{ background:#5865F2; box-shadow:0 0 20px #5865F2; }
-
-/* ===== MODAL ===== */
-.modal-bg{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.75);
-    display:none;
-    align-items:center;
+    gap:15px;
     justify-content:center;
-    z-index:999;
+    flex-wrap:wrap;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
 }
 
-.modal{
-    background:#111;
-    padding:30px;
-    border-radius:18px;
-    max-width:420px;
-    width:90%;
-    box-shadow:0 0 40px rgba(0,0,0,0.8);
-    animation:fadeIn .25s ease;
+select,input{
+    padding:8px;
 }
 
-.modal h2{ color:#FF4500; }
-
-.modal p{
-    opacity:.9;
-    line-height:1.5em;
+#catalogo{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+    gap:20px;
+    padding:20px;
 }
 
-.modal-buttons{
-    margin-top:25px;
-    display:flex;
-    gap:12px;
-    justify-content:center;
-}
-
-.modal-buttons button{
-    border:none;
-    padding:12px 18px;
+.producto{
+    background:white;
     border-radius:10px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.2s;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-.btn-enter{
-    background:#FF4500;
+.galeria{
+    display:flex;
+    overflow-x:auto;
+}
+
+.galeria img{
+    width:100%;
+    min-width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+}
+
+.precio-anterior{
+    text-decoration:line-through;
+    color:red;
+}
+
+.precio-actual{
+    font-size:24px;
+    color:green;
+    font-weight:bold;
+}
+
+.oferta{
+    background:#ff5722;
     color:white;
-}
-.btn-enter:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 15px #FF4500;
-}
-
-.btn-cancel{
-    background:#444;
-    color:white;
-}
-.btn-cancel:hover{ background:#666; }
-
-@keyframes fadeIn{
-    from{opacity:0; transform:scale(.9);}
-    to{opacity:1; transform:scale(1);}
+    padding:5px 10px;
+    border-radius:5px;
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<header>
+    <h1>Catálogo de Productos</h1>
+    <p>Encuentra las mejores ofertas</p>
+</header>
 
-    <img src="icon_rein2.png" class="profile-img">
-    <h1>Rein_rx86</h1>
+<div class="barra">
 
-    <div class="section-title">🌐 Redes Oficiales</div>
+    <label>
+        Ofertas
+        <input type="checkbox" id="soloOfertas">
+    </label>
 
-    <div class="links">
+    <select id="ordenPrecio">
+        <option value="">Ordenar según precio</option>
+        <option value="asc">Menor a Mayor</option>
+        <option value="desc">Mayor a Menor</option>
+    </select>
 
-        <a href="https://www.twitch.tv/rein_rx86" target="_blank" class="link-btn twitch">
-            <i class="fab fa-twitch"></i>
-            <span>Twitch</span>
-        </a>
-
-        <a href="https://www.instagram.com/rein_rx86/" target="_blank" class="link-btn instagram">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-        </a>
-
-        <a href="#" class="link-btn reddit" onclick="openRedditModal(event)">
-            <i class="fab fa-reddit"></i>
-            <span>Reddit</span>
-        </a>
-
-        <a href="https://cults3d.com/en/users/Rein_rx86/3d-models" target="_blank" class="link-btn cults">
-            <i class="fas fa-cube"></i>
-            <span>Cults3D</span>
-        </a>
-
-        <a href="https://ko-fi.com/rein_rx86" target="_blank" class="link-btn kofi">
-            <i class="fas fa-mug-hot"></i>
-            <span>Ko-fi</span>
-        </a>
-
-    </div>
-
-    <div class="section-title">💬 Comunidad</div>
-
-    <div class="links">
-        <a href="https://discord.gg/3geFhjwQVH" target="_blank" class="link-btn discord">
-            <i class="fab fa-discord"></i>
-            <span>Discord</span>
-        </a>
-    </div>
+    <select id="categoria">
+        <option value="">Todas las categorías</option>
+    </select>
 
 </div>
 
-<div class="modal-bg" id="redditModal">
-    <div class="modal">
-        <h2>⚠ Contenido NSFW</h2>
-        <p>
-        Este perfil puede contener material para adultos.<br>
-        Debes ser mayor de edad para continuar.
-        </p>
+<div id="catalogo"></div>
 
-        <div class="modal-buttons">
-            <button class="btn-enter" onclick="goToReddit()">Soy mayor de edad</button>
-            <button class="btn-cancel" onclick="closeRedditModal()">Salir</button>
-        </div>
-    </div>
-</div>
+<!-- Carga los productos -->
+<script src="datos.html"></script>
 
 <script>
-function openRedditModal(e){
-    e.preventDefault();
-    document.getElementById("redditModal").style.display="flex";
+
+const catalogo = document.getElementById("catalogo");
+const categoriaSelect = document.getElementById("categoria");
+
+function cargarCategorias() {
+    const categorias = [...new Set(productos.map(p => p.categoria))];
+
+    categorias.forEach(cat => {
+        const option = document.createElement("option");
+        option.value = cat;
+        option.textContent = cat;
+        categoriaSelect.appendChild(option);
+    });
 }
 
-function closeRedditModal(){
-    document.getElementById("redditModal").style.display="none";
+function mostrarProductos() {
+
+    let lista = [...productos];
+
+    const categoria = categoriaSelect.value;
+    const orden = document.getElementById("ordenPrecio").value;
+    const ofertas = document.getElementById("soloOfertas").checked;
+
+    if(categoria){
+        lista = lista.filter(p => p.categoria === categoria);
+    }
+
+    if(ofertas){
+        lista = lista.filter(
+            p => p.precioActual < p.precioAnterior
+        );
+    }
+
+    if(orden === "asc"){
+        lista.sort((a,b)=>a.precioActual-b.precioActual);
+    }
+
+    if(orden === "desc"){
+        lista.sort((a,b)=>b.precioActual-a.precioActual);
+    }
+
+    catalogo.innerHTML = "";
+
+    lista.forEach(producto=>{
+
+        catalogo.innerHTML += `
+        <div class="producto">
+
+            <div class="galeria">
+                ${producto.imagenes.map(img =>
+                    `<img src="${img}" alt="${producto.titulo}">`
+                ).join("")}
+            </div>
+
+            <div class="info">
+
+                <h2>${producto.titulo}</h2>
+
+                <p>${producto.descripcion}</p>
+
+                <p>
+                    <strong>ID:</strong> ${producto.id}
+                </p>
+
+                <p>
+                    <strong>Categoría:</strong>
+                    ${producto.categoria}
+                </p>
+
+                <p>
+                    <strong>Dimensiones:</strong>
+                    ${producto.dimensiones.altura}
+                    ×
+                    ${producto.dimensiones.ancho}
+                    ×
+                    ${producto.dimensiones.fondo}
+                </p>
+
+                <p class="precio-anterior">
+                    $${producto.precioAnterior}
+                </p>
+
+                <p class="precio-actual">
+                    $${producto.precioActual}
+                </p>
+
+                ${
+                    producto.precioActual < producto.precioAnterior
+                    ? '<span class="oferta">OFERTA</span>'
+                    : ''
+                }
+
+            </div>
+
+        </div>
+        `;
+    });
 }
 
-function goToReddit(){
-    window.open("https://www.reddit.com/user/Rein_rx86/","_blank");
-    closeRedditModal();
-}
+document
+.getElementById("ordenPrecio")
+.addEventListener("change",mostrarProductos);
+
+document
+.getElementById("categoria")
+.addEventListener("change",mostrarProductos);
+
+document
+.getElementById("soloOfertas")
+.addEventListener("change",mostrarProductos);
+
+cargarCategorias();
+mostrarProductos();
+
 </script>
 
 </body>
