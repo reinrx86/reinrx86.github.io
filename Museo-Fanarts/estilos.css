@@ -332,7 +332,7 @@ header p {
     font-size: 28px;
     line-height: 1;
     cursor: pointer;
-    color: white;
+    color: #2a1a00;
 }
 
 .cerrar:hover {
@@ -349,14 +349,15 @@ header p {
 ========================= */
 
 .redes-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
-    color: #2a1a00;
-    align-items: center;
+    justify-items: center;
 }
 
 .btn-red {
+    width: 180px;
+
     display: flex;
     align-items: center;
     gap: 10px;
@@ -364,18 +365,41 @@ header p {
     padding: 12px 14px;
     border-radius: 8px;
 
-    color: white;
+    background: linear-gradient(
+        145deg,
+        #d4af37,
+        #a67c00,
+        #f6e27a,
+        #8c6a00
+    );
+
+    color: #2a1a00;
     text-decoration: none;
     font-weight: bold;
 
-    transition: all .2s ease;
+    border: 2px solid #5c3b12;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.4),
+        inset 0 0 10px rgba(255,255,255,0.25);
+
+    transition: all 0.2s ease;
 }
 
 .btn-red img {
     width: 24px;
     height: 24px;
     object-fit: contain;
-    display: block;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(8%)
+        sepia(39%)
+        saturate(1844%)
+        hue-rotate(19deg)
+        brightness(94%)
+        contrast(101%);
 }
 
 .btn-red:hover {
@@ -503,6 +527,8 @@ header p {
 ========================= */
 
 .btn-red {
+    width: 180px;
+
     display: flex;
     align-items: center;
     gap: 10px;
@@ -510,15 +536,23 @@ header p {
     padding: 12px 14px;
     border-radius: 8px;
 
-    color: white !important;
+    background: linear-gradient(
+        145deg,
+        #d4af37,
+        #a67c00,
+        #f6e27a,
+        #8c6a00
+    );
+
+    color: #2a1a00;
     text-decoration: none;
     font-weight: bold;
 
-    border: 2px solid rgba(255,255,255,0.15);
+    border: 2px solid #5c3b12;
 
     box-shadow:
-        0 6px 12px rgba(0,0,0,0.4),
-        inset 0 1px 0 rgba(255,255,255,0.15);
+        0 10px 20px rgba(0,0,0,0.4),
+        inset 0 0 10px rgba(255,255,255,0.25);
 
     transition: all 0.2s ease;
 }
@@ -535,54 +569,7 @@ header p {
     transform: translateY(-2px) scale(1.03);
     filter: brightness(1.15);
 }
-/* =========================
-   COLORES REDES
-========================= */
 
-.instagram {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  border-radius: 12px;
-  overflow: hidden;
-  border: none;
-}
-
-.twitch {
-  background: #9146ff;
-}
-
-.youtube {
-  background: #ff0000;
-}
-
-.reddit {
-  background: #ff4500;
-}
-
-.tiktok {
-  background: #111111;
-  color: #ffffff;
-}
-
-.x {
-  background: #000000;
-  color: #ffffff;
-}
-
-.artstation {
-  background: #13aff0;
-}
-
-.vgen {
-  background: #00a884;
-}
-
-.deviantart {
-  background: #05cc47;
-}
-
-.discord {
-  background: #5865f2;
-}
 /* =========================
    FIX TEXTO NSFW (VISIBLE)
 ========================= */
@@ -632,4 +619,67 @@ header p {
     width: auto;          /* 👈 clave: respeta proporción */
     max-width: 100%;      /* evita desbordes en móvil */
     object-fit: contain;  /* mantiene la imagen completa */
+}
+
+.instagram:hover {
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+}
+
+.twitch:hover {
+    background: #9146ff;
+}
+
+.youtube:hover {
+    background: #ff0000;
+}
+
+.reddit:hover {
+    background: #ff4500;
+}
+
+.tiktok:hover {
+    background: #111111;
+}
+
+.x:hover {
+    background: #000000;
+}
+
+.artstation:hover {
+    background: #13aff0;
+}
+
+.vgen:hover {
+    background: #00a884;
+}
+
+.deviantart:hover {
+    background: #05cc47;
+}
+
+.discord:hover {
+    background: #5865f2;
+}
+
+.btn-red:hover {
+    color: white !important;
+}
+
+.btn-red:hover img {
+    filter: brightness(0) invert(1);
+}
+
+@media (min-width: 500px) {
+
+    .redes-container:has(.btn-red:nth-child(7)) {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

@@ -82,8 +82,8 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
 function cargarFanarts() {
 
     galeria.innerHTML = "";
-
-    fanarts.forEach(art => {
+    const fanartsRandom = [...fanarts].sort(() => Math.random() - 0.5);
+    fanartsRandom.forEach(art => {
 
         const cuadro = document.createElement("div");
         cuadro.classList.add("cuadro");
@@ -181,6 +181,8 @@ if (cancelarNsfw) {
 // =========================
 function abrirModal(art) {
 
+    const datosArtista = artistas[art.artista];
+
     redesContainer.innerHTML = "";
 
     const redes = [
@@ -201,16 +203,17 @@ function abrirModal(art) {
     redes.forEach(red => {
 
         if (
-            art.redes &&
-            art.redes[red.key] === 1 &&
-            art.links &&
-            art.links[red.key]
+            datosArtista &&
+            datosArtista.redes &&
+            datosArtista.redes[red.key] === 1 &&
+            datosArtista.links &&
+            datosArtista.links[red.key]
         ) {
 
             const enlace = document.createElement("a");
 
             enlace.classList.add("btn-red", red.clase);
-            enlace.href = art.links[red.key];
+            enlace.href = datosArtista.links[red.key];
             enlace.target = "_blank";
             enlace.rel = "noopener noreferrer";
 
