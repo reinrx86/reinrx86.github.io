@@ -352,6 +352,8 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #2a1a00;
+    align-items: center;
 }
 
 .btn-red {

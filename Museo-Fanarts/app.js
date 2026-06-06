@@ -226,7 +226,7 @@ function abrirModal(art) {
 
     if (!tieneRedes) {
         redesContainer.innerHTML = `
-            <p style="color:#ccc;">
+            <p style="color:#2a1a00;">
                 Este artista no tiene redes disponibles.
             </p>
         `;
