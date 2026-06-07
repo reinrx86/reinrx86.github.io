@@ -29,10 +29,12 @@ const artistas = {
 
     "Bactic": {
         redes: {
-            instagram: 1
+            instagram: 1,
+            discord: 1
         },
         links: {
-            instagram: "https://instagram.com/..."
+            instagram: "https://instagram.com/...",
+            discord: "https://discord.com/users/574303152392765442"
         }
     },
 
