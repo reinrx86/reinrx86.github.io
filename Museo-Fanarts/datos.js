@@ -148,6 +148,12 @@ const fanarts = [
     imagen: "img/balutcomisario.png",
     artista: "Balutcomisario",
     nsfw: 0,
+},
+{
+    id: 26,
+    imagen: "img/nymaruchan-4.png",
+    artista: "nymaruchan_art",
+    nsfw: 0,
 }
 ];
 
