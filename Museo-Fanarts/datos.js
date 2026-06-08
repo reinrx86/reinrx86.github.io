@@ -145,7 +145,7 @@ const fanarts = [
 },
 {
     id: 25,
-    imagen: "img/Balutcomisario.png",
+    imagen: "img/balutcomisario.png",
     artista: "Balutcomisario",
     nsfw: 0,
 },
