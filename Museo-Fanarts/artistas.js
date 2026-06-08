@@ -11,6 +11,7 @@ const artistas = {
             tiktok: 1,
             artstation: 1,
             deviantart: 1,
+            furaffinity: 1,
             discord: 1
         },
         links: {
@@ -23,6 +24,7 @@ const artistas = {
             tiktok: "https://www.tiktok.com/@nymaru.chan",
             artstation: "https://www.artstation.com/nymaruchan",
             deviantart: "https://www.deviantart.com/nymaruchan",
+            furaffinity: "https://www.furaffinity.net/user/nymaruchan",
             discord: "https://discord.com/users/444728806847152128"
         }
     },
@@ -36,14 +38,22 @@ const artistas = {
             youtube: 1,
             vgen: 0,
             tiktok: 0,
-            artstation: 0,
+            artstation: 0,         
             deviantart: 0,
+            furaffinity: 0,   
             discord: 1
         },
         links: {
             twitch: "https://www.twitch.tv/bactic",
             instagram: "https://www.instagram.com/bactic.lord.art/",
+            reddit: "",
+            x: "",
             youtube: "https://www.youtube.com/@Bactic",
+            vgen: "",
+            tiktok: "",
+            artstation: "",         
+            deviantart: "",
+            furaffinity: "",  
             discord: "https://discord.com/users/574303152392765442"
         }
     },
@@ -56,8 +66,9 @@ const artistas = {
             youtube: 1,
             vgen: 0,
             tiktok: 1,
-            artstation: 0,
+            artstation: 0,  
             deviantart: 0,
+            furaffinity: 0,   
             discord: 1
         },
         links: {
@@ -70,6 +81,7 @@ const artistas = {
             tiktok: "https://www.tiktok.com/@strars_bleus?_r=1&_t=ZS-971uw34j5fQ",
             artstation: "",
             deviantart: "",
+            furaffinity: "",  
             discord: "https://discord.com/users/1386597323618127972"
         }
     },
@@ -82,8 +94,9 @@ const artistas = {
             youtube: 0,
             vgen: 0,
             tiktok: 0,
-            artstation: 0,
+            artstation: 0,    
             deviantart: 0,
+            furaffinity: 0,   
             discord: 1
         },
         links: {
@@ -96,6 +109,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",  
             discord: "https://discord.com/users/761781105421582408"
         }
     },
@@ -109,6 +123,7 @@ const artistas = {
             vgen: 1,
             tiktok: 0,
             artstation: 0,
+            furaffinity: 0,     
             deviantart: 0,
             discord: 0
         },
@@ -122,6 +137,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",  
             discord: ""
         }
     },
@@ -134,8 +150,9 @@ const artistas = {
             youtube: 0,
             vgen: 0,
             tiktok: 0,
-            artstation: 0,
+            artstation: 0,   
             deviantart: 0,
+            furaffinity: 0,   
             discord: 0
         },
         links: {
@@ -148,6 +165,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",  
             discord: ""
         }
     },
@@ -160,8 +178,9 @@ const artistas = {
             youtube: 1,
             vgen: 0,
             tiktok: 0,
-            artstation: 0,
+            artstation: 0, 
             deviantart: 0,
+            furaffinity: 0,   
             discord: 0
         },
         links: {
@@ -174,6 +193,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",  
             discord: ""
         }
     },
@@ -188,6 +208,7 @@ const artistas = {
             tiktok: 0,
             artstation: 0,
             deviantart: 0,
+            furaffinity: 0,   
             discord: 0
         },
         links: {
@@ -200,6 +221,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",  
             discord: ""
         }
     },
@@ -214,6 +236,7 @@ const artistas = {
             tiktok: 0,
             artstation: 0,
             deviantart: 0,
+            furaffinity: 0,   
             discord: 0
         },
         links: {
@@ -226,6 +249,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",   
             discord: ""
         }
     }
@@ -261,6 +285,7 @@ const artistas = {
             tiktok: 0,
             artstation: 0,
             deviantart: 0,
+            furaffinity: 0,   
             discord: 0
         },
         links: {
@@ -273,6 +298,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
+            furaffinity: "",   
             discord: ""
         }
     }

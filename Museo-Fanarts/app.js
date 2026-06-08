@@ -195,6 +195,7 @@ function abrirModal(art) {
         { key: "tiktok", label: "TikTok", icono: "icons/tiktok.png", clase: "tiktok" },
         { key: "artstation", label: "ArtStation", icono: "icons/artstation.png", clase: "artstation" },
         { key: "deviantart", label: "Deviantart", icono: "icons/deviantart.png", clase: "deviantart" },
+        { key: "furaffinity", label: "furaffinity", icono: "icons/furaffinity.png", clase: "furaffinity" },
         { key: "discord", label: "Discord", icono: "icons/discord.png", clase: "discord" }
     ];
 

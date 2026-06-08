@@ -664,6 +664,18 @@ header p {
     background: #05cc47;
 }
 
+.furaffinity:hover {
+    background: linear-gradient(
+        135deg,
+        #d35400,
+        #c49a00,
+        #2e8b57,
+        #1e5fbf,
+        #6a3fb5,
+        #c0398f
+    );
+}
+
 .discord:hover {
     background: #5865f2;
 }

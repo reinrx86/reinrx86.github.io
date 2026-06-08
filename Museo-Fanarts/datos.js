@@ -262,6 +262,18 @@ const fanarts = [
     imagen: "img/soyos.png",
     artista: "Soyo__1",
     nsfw: 0,
+},
+{
+    id: 45,
+    imagen: "img/Ibarra_Milanesa4483.png",
+    artista: "Ibarra_Milanesa",
+    nsfw: 0,
+},
+{
+    id: 46,
+    imagen: "img/Feztri4483.png",
+    artista: "Feztri",
+    nsfw: 0,
 }
 ];
 
