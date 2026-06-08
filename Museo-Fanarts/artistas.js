@@ -55,7 +55,7 @@ const artistas = {
             x: 0,
             youtube: 1,
             vgen: 0,
-            tiktok: 0,
+            tiktok: 1,
             artstation: 0,
             deviantart: 0,
             discord: 1
@@ -67,7 +67,7 @@ const artistas = {
             x: "",
             youtube: "https://www.youtube.com/@StarsBleus",
             vgen: "",
-            tiktok: "",
+            tiktok: "https://www.tiktok.com/@strars_bleus?_r=1&_t=ZS-971uw34j5fQ",
             artstation: "",
             deviantart: "",
             discord: "https://discord.com/users/1386597323618127972"
@@ -151,7 +151,7 @@ const artistas = {
             discord: ""
         }
     },
-        "chhoomy": {
+        "Chhoomy": {
         redes: {
             twitch: 0,
             instagram: 1,
@@ -195,6 +195,32 @@ const artistas = {
             instagram: "https://www.instagram.com/daeredraw/",
             reddit: "",
             x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: ""
+        }
+    },
+        "Smash_totito": {
+        redes: {
+            twitch: 0,
+            instagram: 0,
+            reddit: 0,
+            x: 1,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 0
+        },
+        links: {
+            twitch: "",
+            instagram: "",
+            reddit: "",
+            x: "https://x.com/Mashsix",
             youtube: "",
             vgen: "",
             tiktok: "",
