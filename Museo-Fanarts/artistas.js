@@ -76,7 +76,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: ""
+            discord: "https://discord.com/users/1217905876497727501"
         }
     },
 
@@ -92,7 +92,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: ""
+            discord: "https://discord.com/users/541555110560530442"
         }
     },
 
@@ -108,7 +108,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: ""
+            discord: "https://discord.com/users/996241592333639691"
         }
     },
 
@@ -124,7 +124,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: ""
+            discord: "https://discord.com/users/1307370525450043515"
         }
     },
 
@@ -140,10 +140,25 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: ""
+            discord: "https://discord.com/users/1430836420129329173"
         }
     },
-        
+    
+    "Soyo__1": {
+        links: {
+            twitch: "https://www.twitch.tv/soyo__1",
+            instagram: "https://www.instagram.com/soyo___1/",
+            reddit: "",
+            x: "",
+            youtube: "https://www.youtube.com/@Soyo__1-1",
+            vgen: "",
+            tiktok: "https://www.tiktok.com/@soyo___1",
+            artstation: "",
+            deviantart: "",
+            furaffinity: "",
+            discord: "https://discord.com/users/1397619318077915167"
+        }
+    },
 
     
     
