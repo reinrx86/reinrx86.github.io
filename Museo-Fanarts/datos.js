@@ -145,7 +145,7 @@ const fanarts = [
 },
 {
     id: 25,
-    imagen: "img/balutcomisario.png",
+    imagen: "img/Balutcomisario.png",
     artista: "Balutcomisario",
     nsfw: 0,
 },
@@ -216,33 +216,51 @@ const fanarts = [
     nsfw: 0,
 },
 {
-    id: 33,
+    id: 37,
     imagen: "img/Feztri241.png",
     artista: "Feztri",
     nsfw: 0,
 },
 {
-    id: 36,
+    id: 38,
     imagen: "img/Chhoomy5744.png",
     artista: "Chhoomy",
     nsfw: 0,
 },
 {
-    id: 35,
+    id: 39,
     imagen: "img/Ibarra_Milanesa483.png",
     artista: "Ibarra_Milanesa",
     nsfw: 0,
 },
 {
-    id: 36,
+    id: 40,
     imagen: "img/Ibarra_Milanesa9483.png",
     artista: "Ibarra_Milanesa",
     nsfw: 0,
 },
 {
-    id: 36,
+    id: 41,
     imagen: "img/Ibarra_Milanesa94883.png",
     artista: "Ibarra_Milanesa",
+    nsfw: 0,
+},
+{
+    id: 42,
+    imagen: "img/Chhoomy57544.png",
+    artista: "Chhoomy",
+    nsfw: 0,
+},
+{
+    id: 43,
+    imagen: "img/Balutcomisario4.png",
+    artista: "Balutcomisario",
+    nsfw: 0,
+},
+{
+    id: 44,
+    imagen: "img/soyos.png",
+    artista: "Soyo__1",
     nsfw: 0,
 }
 ];
