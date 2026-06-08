@@ -1,15 +1,13 @@
-const galeria = document.getElementById("galeria");
+const $ = id => document.getElementById(id);
 
-const modal = document.getElementById("modal-redes");
-const redesContainer = document.getElementById("redes");
-const cerrarModal = document.getElementById("cerrar-modal");
-
-const modalNsfw = document.getElementById("modal-nsfw");
-const aceptarNsfw = document.getElementById("aceptar-nsfw");
-const cancelarNsfw = document.getElementById("cancelar-nsfw");
-
-const nombreArtistaModal =
-    document.getElementById("nombre-artista-modal");
+const galeria = $("galeria"),
+      modal = $("modal-redes"),
+      redesContainer = $("redes"),
+      cerrarModal = $("cerrar-modal"),
+      modalNsfw = $("modal-nsfw"),
+      aceptarNsfw = $("aceptar-nsfw"),
+      cancelarNsfw = $("cancelar-nsfw"),
+      nombreArtistaModal = $("nombre-artista-modal");
 
 let cuadroExpandido = null;
 let fanartPendiente = null;
@@ -82,7 +80,40 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
 function cargarFanarts() {
 
     galeria.innerHTML = "";
-    const fanartsRandom = [...fanarts].sort(() => Math.random() - 0.5);
+
+    const fanartsLista = [];
+
+    for (const artista in fanarts) {
+
+        fanarts[artista].forEach(item => {
+
+            if (typeof item === "string") {
+
+                fanartsLista.push({
+                    imagen: item,
+                    artista,
+                    nsfw: 0
+                });
+
+            } else {
+
+                fanartsLista.push({
+                    imagen: item.imagen,
+                    artista,
+                    nsfw: item.nsfw || 0
+                });
+
+            }
+
+        });
+
+    }
+
+    const fanartsRandom = [...fanartsLista]
+        .map(v => ({ v, r: Math.random() }))
+        .sort((a, b) => a.r - b.r)
+        .map(({ v }) => v);
+
     fanartsRandom.forEach(art => {
 
         const cuadro = document.createElement("div");
@@ -186,41 +217,39 @@ function abrirModal(art) {
     redesContainer.innerHTML = "";
 
     const redes = [
-        { key: "twitch", label: "Twitch", icono: "icons/twitch.png", clase: "twitch" },
-        { key: "instagram", label: "Instagram", icono: "icons/instagram.png", clase: "instagram" },
-        { key: "reddit", label: "Reddit", icono: "icons/reddit.png", clase: "reddit" },
-        { key: "x", label: "X", icono: "icons/x.png", clase: "x" },
-        { key: "youtube", label: "YouTube", icono: "icons/youtube.png", clase: "youtube" },
-        { key: "vgen", label: "VGen", icono: "icons/vgen.png", clase: "vgen" },
-        { key: "tiktok", label: "TikTok", icono: "icons/tiktok.png", clase: "tiktok" },
-        { key: "artstation", label: "ArtStation", icono: "icons/artstation.png", clase: "artstation" },
-        { key: "deviantart", label: "Deviantart", icono: "icons/deviantart.png", clase: "deviantart" },
-        { key: "furaffinity", label: "furaffinity", icono: "icons/furaffinity.png", clase: "furaffinity" },
-        { key: "discord", label: "Discord", icono: "icons/discord.png", clase: "discord" }
+    ["twitch","Twitch"],
+    ["instagram","Instagram"],
+    ["reddit","Reddit"],
+    ["x","X"],
+    ["youtube","YouTube"],
+    ["vgen","VGen"],
+    ["tiktok","TikTok"],
+    ["artstation","ArtStation"],
+    ["deviantart","DeviantArt"],
+    ["furaffinity","FurAffinity"],
+    ["discord","Discord"]
     ];
 
     let tieneRedes = false;
 
-    redes.forEach(red => {
+    redes.forEach(([key, label]) => {
 
         if (
             datosArtista &&
-            datosArtista.redes &&
-            datosArtista.redes[red.key] === 1 &&
             datosArtista.links &&
-            datosArtista.links[red.key]
+            datosArtista.links[key]
         ) {
 
             const enlace = document.createElement("a");
 
-            enlace.classList.add("btn-red", red.clase);
-            enlace.href = datosArtista.links[red.key];
+            enlace.classList.add("btn-red", key);
+            enlace.href = datosArtista.links[key];
             enlace.target = "_blank";
             enlace.rel = "noopener noreferrer";
 
             enlace.innerHTML = `
-                <img src="${red.icono}" alt="${red.label}">
-                <span>${red.label}</span>
+                <img src="icons/${key}.png" alt="${label}">
+                <span>${label}</span>
             `;
 
             redesContainer.appendChild(enlace);
@@ -242,11 +271,10 @@ function abrirModal(art) {
 // =========================
 // CERRAR MODAL REDES
 // =========================
-if (cerrarModal) {
-    cerrarModal.addEventListener("click", () => {
-        modal.classList.add("oculto");
-    });
-}
+cerrarModal?.addEventListener(
+    "click",
+    ()=>modal.classList.add("oculto")
+);
 
 if (modal) {
     modal.addEventListener("click", (e) => {
@@ -277,8 +305,9 @@ document.addEventListener("keydown", (e) => {
             cuadroExpandido = null;
         }
 
-        if (modal) modal.classList.add("oculto");
-        if (modalNsfw) modalNsfw.classList.add("oculto");
+        [modal,modalNsfw].forEach(
+            m=>m?.classList.add("oculto")
+        );
 
         fanartPendiente = null;
     }
@@ -288,3 +317,9 @@ document.addEventListener("keydown", (e) => {
 // INICIAR
 // =========================
 cargarFanarts();
+
+
+
+
+
+

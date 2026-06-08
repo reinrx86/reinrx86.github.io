@@ -1,19 +1,6 @@
 const artistas = {
 
     "nymaruchan_art": {
-        redes: {
-            twitch: 1,
-            instagram: 1,
-            reddit: 1,
-            x: 1,
-            youtube: 1,
-            vgen: 1,
-            tiktok: 1,
-            artstation: 1,
-            deviantart: 1,
-            furaffinity: 1,
-            discord: 1
-        },
         links: {
             twitch: "https://www.twitch.tv/nymaruchan_art",
             instagram: "https://www.instagram.com/nymaruchan.art/",
@@ -29,48 +16,7 @@ const artistas = {
         }
     },
 
-    "Bactic": {
-        redes: {
-            twitch: 1,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 1,
-            vgen: 0,
-            tiktok: 1,
-            artstation: 0,         
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 1
-        },
-        links: {
-            twitch: "https://www.twitch.tv/bactic",
-            instagram: "https://www.instagram.com/bactic.lord.art/",
-            reddit: "",
-            x: "",
-            youtube: "https://www.youtube.com/@Bactic",
-            vgen: "",
-            tiktok: "https://www.tiktok.com/@bactic_1",
-            artstation: "",         
-            deviantart: "",
-            furaffinity: "",  
-            discord: "https://discord.com/users/574303152392765442"
-        }
-    },
-        "Stars_Bleus": {
-        redes: {
-            twitch: 1,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 1,
-            vgen: 0,
-            tiktok: 1,
-            artstation: 0,  
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 1
-        },
+    "Stars_Bleus": {
         links: {
             twitch: "https://www.twitch.tv/stars_bleus_",
             instagram: "https://www.instagram.com/stars_bleus/",
@@ -81,24 +27,28 @@ const artistas = {
             tiktok: "https://www.tiktok.com/@strars_bleus?_r=1&_t=ZS-971uw34j5fQ",
             artstation: "",
             deviantart: "",
-            furaffinity: "",  
+            furaffinity: "",
             discord: "https://discord.com/users/1386597323618127972"
         }
     },
-        "Feztri": {
-        redes: {
-            twitch: 1,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 0,
-            vgen: 0,
-            tiktok: 0,
-            artstation: 0,    
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 1
-        },
+
+    "Bactic": {
+        links: {
+            twitch: "https://www.twitch.tv/bactic",
+            instagram: "https://www.instagram.com/bactic.lord.art/",
+            reddit: "",
+            x: "",
+            youtube: "https://www.youtube.com/@Bactic",
+            vgen: "",
+            tiktok: "https://www.tiktok.com/@bactic_1",
+            artstation: "",
+            deviantart: "",
+            furaffinity: "",
+            discord: "https://discord.com/users/574303152392765442"
+        }
+    },
+
+    "Feztri": {
         links: {
             twitch: "https://www.twitch.tv/feztri_",
             instagram: "https://www.instagram.com/mfgoldenboy_/",
@@ -109,52 +59,28 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",  
+            furaffinity: "",
             discord: "https://discord.com/users/761781105421582408"
         }
     },
-        "RaM_RameN_": {
-        redes: {
-            twitch: 0,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 0,
-            vgen: 1,
-            tiktok: 0,
-            artstation: 0,
-            furaffinity: 0,     
-            deviantart: 0,
-            discord: 0
-        },
+    
+    "RaM_RameN_": {
         links: {
             twitch: "",
             instagram: "https://www.instagram.com/ram_ramen_/",
             reddit: "",
-            x: "",
+            x: "https://x.com/RaM_Doodles?t=uFX2TlQAcN0UC595bagXfg&s=09",
             youtube: "",
             vgen: "https://vgen.co/RaM_RameN_",
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",  
+            furaffinity: "",
             discord: ""
         }
     },
-        "Ibarra_Milanesa": {
-        redes: {
-            twitch: 0,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 0,
-            vgen: 0,
-            tiktok: 0,
-            artstation: 0,   
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 0
-        },
+
+    "Ibarra_Milanesa": {
         links: {
             twitch: "",
             instagram: "https://www.instagram.com/capybarreon/",
@@ -165,24 +91,12 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",  
+            furaffinity: "",
             discord: ""
         }
     },
-        "Chhoomy": {
-        redes: {
-            twitch: 0,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 1,
-            vgen: 0,
-            tiktok: 0,
-            artstation: 0, 
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 0
-        },
+
+    "Chhoomy": {
         links: {
             twitch: "",
             instagram: "https://www.instagram.com/cchhomy/",
@@ -193,24 +107,12 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",  
+            furaffinity: "",
             discord: ""
         }
     },
-        "cozydaewe": {
-        redes: {
-            twitch: 1,
-            instagram: 1,
-            reddit: 0,
-            x: 0,
-            youtube: 0,
-            vgen: 0,
-            tiktok: 0,
-            artstation: 0,
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 0
-        },
+
+    "cozydaewe": {
         links: {
             twitch: "https://www.twitch.tv/cozydaewe",
             instagram: "https://www.instagram.com/daeredraw/",
@@ -221,24 +123,12 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",  
+            furaffinity: "",
             discord: ""
         }
     },
-        "Smash_totito": {
-        redes: {
-            twitch: 0,
-            instagram: 0,
-            reddit: 0,
-            x: 1,
-            youtube: 0,
-            vgen: 0,
-            tiktok: 0,
-            artstation: 0,
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 0
-        },
+
+    "Smash_totito": {
         links: {
             twitch: "",
             instagram: "",
@@ -249,11 +139,11 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",   
+            furaffinity: "",
             discord: ""
         }
-    }
-    
+    },
+        
 
     
     
@@ -271,23 +161,9 @@ const artistas = {
     
     
     
-    
-    
-     ,
-        "TEST": {
-        redes: {
-            twitch: 0,
-            instagram: 0,
-            reddit: 0,
-            x: 0,
-            youtube: 0,
-            vgen: 0,
-            tiktok: 0,
-            artstation: 0,
-            deviantart: 0,
-            furaffinity: 0,   
-            discord: 0
-        },
+
+
+    "TEST": {
         links: {
             twitch: "",
             instagram: "",
@@ -298,7 +174,7 @@ const artistas = {
             tiktok: "",
             artstation: "",
             deviantart: "",
-            furaffinity: "",   
+            furaffinity: "",
             discord: ""
         }
     }

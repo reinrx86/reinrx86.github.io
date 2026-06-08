@@ -1,321 +1,102 @@
-const fanarts = [
-{
-    id: 1,
-    imagen: "img/nymaruchan-1.png",
-    artista: "nymaruchan_art",
-    nsfw: 0
-},
-{
-    id: 2,
-    imagen: "img/nymaruchan-2.png",
-    artista: "nymaruchan_art",
-    nsfw: 0
-},
-{
-    id: 3,
-    imagen: "img/nymaruchan-3.png",
-    artista: "nymaruchan_art",
-    nsfw: 0,
-},
-{
-    id: 4,
-    imagen: "img/bactic-1.png",
-    artista: "Bactic",
-    nsfw: 0,
-},
-{
-    id: 5,
-    imagen: "img/bactic-2.png",
-    artista: "Bactic",
-    nsfw: 0,
-},
-{
-    id: 6,
-    imagen: "img/bactic-3.png",
-    artista: "Bactic",
-    nsfw: 0,
-},
-{
-    id: 7,
-    imagen: "img/star_bleus-1.png",
-    artista: "Stars_Bleus",
-    nsfw: 0,
-},
-{
-    id: 8,
-    imagen: "img/star_bleus-2.png",
-    artista: "Stars_Bleus",
-    nsfw: 0,
-},
-{
-    id: 9,
-    imagen: "img/star_bleus-3.png",
-    artista: "Stars_Bleus",
-    nsfw: 0,
-},
-{
-    id: 10,
-    imagen: "img/ibarra-1.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 11,
-    imagen: "img/ibarra-2.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 12,
-    imagen: "img/ibarra-3.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 13,
-    imagen: "img/ibarra-4.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 14,
-    imagen: "img/haru-1.png",
-    artista: "Smash_totito",
-    nsfw: 0,
-},
-{
-    id: 15,
-    imagen: "img/haru-2.png",
-    artista: "Smash_totito",
-    nsfw: 0,
-},
-{
-    id: 16,
-    imagen: "img/feztri-1.png",
-    artista: "Feztri",
-    nsfw: 0,
-},
-{
-    id: 17,
-    imagen: "img/cozydaewe-1.png",
-    artista: "cozydaewe",
-    nsfw: 0,
-},
-{
-    id: 18,
-    imagen: "img/chroma-1.png",
-    artista: "Chroma",
-    nsfw: 0,
-},
-{
-    id: 19,
-    imagen: "img/chhoomy-1.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 20,
-    imagen: "img/chhoomy-2.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 21,
-    imagen: "img/chhoomy-3.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 22,
-    imagen: "img/chhoomy-4.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 23,
-    imagen: "img/chhoomy-5.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 24,
-    imagen: "img/chhoomy-6.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 25,
-    imagen: "img/balutcomisario.png",
-    artista: "Balutcomisario",
-    nsfw: 0,
-},
-{
-    id: 26,
-    imagen: "img/nymaruchan-4.png",
-    artista: "nymaruchan_art",
-    nsfw: 0,
-},
-{
-    id: 27,
-    imagen: "http://imgfz.com/i/xbzP2XV.png",
-    artista: "RaM_RameN_",
-    nsfw: 1,
-},
-{
-    id: 28,
-    imagen: "img/ibarra-5.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 29,
-    imagen: "img/Mr_Cat_13.png",
-    artista: "Mr_Cat_i3",
-    nsfw: 0,
-},
-{
-    id: 30,
-    imagen: "img/Ibarra_Milanesa.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 31,
-    imagen: "img/Ibarra_Milanesa1.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 32,
-    imagen: "img/Ibarra_Milanesa2.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 33,
-    imagen: "img/Feztri21.png",
-    artista: "Feztri",
-    nsfw: 0,
-},
-{
-    id: 34,
-    imagen: "img/Chhoomy54.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 35,
-    imagen: "img/Ibarra_Milanesa43.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 36,
-    imagen: "img/Chhoomy544.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 37,
-    imagen: "img/Feztri241.png",
-    artista: "Feztri",
-    nsfw: 0,
-},
-{
-    id: 38,
-    imagen: "img/Chhoomy5744.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 39,
-    imagen: "img/Ibarra_Milanesa483.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 40,
-    imagen: "img/Ibarra_Milanesa9483.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 41,
-    imagen: "img/Ibarra_Milanesa94883.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 42,
-    imagen: "img/Chhoomy57544.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 43,
-    imagen: "img/Balutcomisario4.png",
-    artista: "Balutcomisario",
-    nsfw: 0,
-},
-{
-    id: 44,
-    imagen: "img/soyos.png",
-    artista: "Soyo__1",
-    nsfw: 0,
-},
-{
-    id: 45,
-    imagen: "img/Ibarra_Milanesa4483.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 46,
-    imagen: "img/Feztri4483.png",
-    artista: "Feztri",
-    nsfw: 0,
-},
-{
-    id: 47,
-    imagen: "img/Chhoomy4483.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 48,
-    imagen: "img/Ibarra_Milanesa4s483.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 49,
-    imagen: "img/Ibarra_Milanesa4ss483.png",
-    artista: "Ibarra_Milanesa",
-    nsfw: 0,
-},
-{
-    id: 50,
-    imagen: "img/Chhoomys4483.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 51,
-    imagen: "img/Chhoomy483.png",
-    artista: "Chhoomy",
-    nsfw: 0,
-},
-{
-    id: 52,
-    imagen: "img/bactic-s3.png",
-    artista: "Bactic",
-    nsfw: 0,
-},
-{
-    id: 53,
-    imagen: "img/haru-1s.png",
-    artista: "Smash_totito",
-    nsfw: 0,
-}
-];
+const fanarts = {
+
+    nymaruchan_art: [
+        "img/nymaruchan-1.png",
+        "img/nymaruchan-2.png",
+        "img/nymaruchan-3.png",
+        "img/nymaruchan-4.png",
+    ],
+
+    Bactic: [
+        "img/bactic-1.png",
+        "img/bactic-2.png",
+        "img/bactic-3.png",
+        "img/bactic-4.png",
+    ],
+
+    Stars_Bleus: [
+        "img/stars_bleus-1.png",
+        "img/stars_bleus-2.png",
+        "img/stars_bleus-3.png"
+    ],
+
+    Ibarra_Milanesa: [
+        "img/ibarra-1.png",
+        "img/ibarra-2.png",
+        "img/ibarra-3.png",
+        "img/ibarra-4.png",
+        "img/ibarra-5.png",
+        "img/ibarra-6.png",
+        "img/ibarra-7.png",
+        "img/ibarra-8.png",
+        "img/ibarra-9.png",
+        "img/ibarra-10.png",
+        "img/ibarra-11.png",
+        "img/ibarra-12.png",
+        "img/ibarra-13.png",
+        "img/ibarra-14.png",
+        "img/ibarra-15.png",
+    ],
+
+    Feztri: [
+        "img/Feztri-1.png",
+        "img/Feztri-2.png",
+        "img/Feztri-3.png",
+        "img/Feztri-4.png"
+    ],
+
+    RaM_RameN_: [
+        "img/ram_ramen_-1.png",
+        {
+            imagen: "http://imgfz.com/i/xbzP2XV.png",
+            nsfw: 1
+        }
+    ],
+
+    Smash_totito: [
+        "img/Smash_totito-1.png",
+        "img/Smash_totito-2.png",
+        "img/Smash_totito-3.png",
+        "img/Smash_totito-4.png",
+    ],
+
+    cozydaewe: [
+        "img/cozydaewe-1.png",
+    ],
+
+    Chroma: [
+        "img/chroma-1.png",
+    ],
+
+    Chhoomy: [
+        "img/chhoomy-1.png",
+        "img/chhoomy-2.png",
+        "img/chhoomy-3.png",
+        "img/chhoomy-4.png",
+        "img/chhoomy-5.png",
+        "img/chhoomy-6.png",
+        "img/chhoomy-7.png",
+        "img/chhoomy-8.png",
+        "img/chhoomy-9.png",
+        "img/chhoomy-10.png",
+        "img/chhoomy-11.png",
+        "img/chhoomy-12.png",
+        "img/chhoomy-13.png",
+    ],
+
+    Balutcomisario: [
+        "img/balutcomisario-1.png",
+        "img/balutcomisario-2.png",
+    ],
+
+    Mr_Cat_i3: [
+        "img/Mr_Cat_i3-1.png",
+    ],
+
+    Soyo__1: [
+        "img/soyo-1.png",
+        "img/soyo-2.png",
+    ],
+
+};
 
