@@ -99,14 +99,14 @@ const artistas = {
             discord: "https://discord.com/users/761781105421582408"
         }
     },
-        "Ram_Ramen": {
+        "RaM_RameN_": {
         redes: {
             twitch: 0,
             instagram: 1,
             reddit: 0,
             x: 0,
             youtube: 0,
-            vgen: 0,
+            vgen: 1,
             tiktok: 0,
             artstation: 0,
             deviantart: 0,
@@ -118,7 +118,7 @@ const artistas = {
             reddit: "",
             x: "",
             youtube: "",
-            vgen: "",
+            vgen: "https://vgen.co/RaM_RameN_",
             tiktok: "",
             artstation: "",
             deviantart: "",
@@ -176,11 +176,38 @@ const artistas = {
             deviantart: "",
             discord: ""
         }
+    },
+        "cozydaewe": {
+        redes: {
+            twitch: 1,
+            instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 0
+        },
+        links: {
+            twitch: "https://www.twitch.tv/cozydaewe",
+            instagram: "https://www.instagram.com/daeredraw/",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: ""
+        }
     }
     
 
     
     
+
     
     
     

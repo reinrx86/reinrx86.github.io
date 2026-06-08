@@ -158,7 +158,7 @@ const fanarts = [
 {
     id: 27,
     imagen: "http://imgfz.com/i/xbzP2XV.png",
-    artista: "Ram_Ramen",
+    artista: "RaM_RameN_",
     nsfw: 1,
 },
 {
