@@ -38,19 +38,19 @@ const fanarts = [
 {
     id: 7,
     imagen: "img/star_bleus-1.png",
-    artista: "Star_Bleus",
+    artista: "Stars_Bleus",
     nsfw: 0,
 },
 {
     id: 8,
     imagen: "img/star_bleus-2.png",
-    artista: "Star_Bleus",
+    artista: "Stars_Bleus",
     nsfw: 0,
 },
 {
     id: 9,
     imagen: "img/star_bleus-3.png",
-    artista: "Star_Bleus",
+    artista: "Stars_Bleus",
     nsfw: 0,
 },
 {
@@ -153,6 +153,18 @@ const fanarts = [
     id: 26,
     imagen: "img/nymaruchan-4.png",
     artista: "nymaruchan_art",
+    nsfw: 0,
+},
+{
+    id: 27,
+    imagen: "http://imgfz.com/i/xbzP2XV.png",
+    artista: "Ram_Ramen",
+    nsfw: 1,
+},
+{
+    id: 28,
+    imagen: "img/ibarra-5.png",
+    artista: "Ibarra_Milanesa",
     nsfw: 0,
 }
 ];

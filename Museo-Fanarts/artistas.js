@@ -29,18 +29,199 @@ const artistas = {
 
     "Bactic": {
         redes: {
+            twitch: 1,
             instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 1,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
             discord: 1
         },
         links: {
-            instagram: "https://instagram.com/...",
+            twitch: "https://www.twitch.tv/bactic",
+            instagram: "https://www.instagram.com/bactic.lord.art/",
+            youtube: "https://www.youtube.com/@Bactic",
             discord: "https://discord.com/users/574303152392765442"
         }
     },
+        "Stars_Bleus": {
+        redes: {
+            twitch: 1,
+            instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 1,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 1
+        },
+        links: {
+            twitch: "https://www.twitch.tv/stars_bleus_",
+            instagram: "https://www.instagram.com/stars_bleus/",
+            reddit: "",
+            x: "",
+            youtube: "https://www.youtube.com/@StarsBleus",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: "https://discord.com/users/1386597323618127972"
+        }
+    },
+        "Feztri": {
+        redes: {
+            twitch: 1,
+            instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 1
+        },
+        links: {
+            twitch: "https://www.twitch.tv/feztri_",
+            instagram: "https://www.instagram.com/mfgoldenboy_/",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: "https://discord.com/users/761781105421582408"
+        }
+    },
+        "Ram_Ramen": {
+        redes: {
+            twitch: 0,
+            instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 0
+        },
+        links: {
+            twitch: "",
+            instagram: "https://www.instagram.com/ram_ramen_/",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: ""
+        }
+    },
+        "Ibarra_Milanesa": {
+        redes: {
+            twitch: 0,
+            instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 0
+        },
+        links: {
+            twitch: "",
+            instagram: "https://www.instagram.com/capybarreon/",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: ""
+        }
+    },
+        "chhoomy": {
+        redes: {
+            twitch: 0,
+            instagram: 1,
+            reddit: 0,
+            x: 0,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 0
+        },
+        links: {
+            twitch: "",
+            instagram: "https://www.instagram.com/cchhomy/",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: ""
+        }
+    }
+    
 
-    "Star_Bleus": {
-        redes: {},
-        links: {}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     ,
+        "TEST": {
+        redes: {
+            twitch: 0,
+            instagram: 0,
+            reddit: 0,
+            x: 0,
+            youtube: 0,
+            vgen: 0,
+            tiktok: 0,
+            artstation: 0,
+            deviantart: 0,
+            discord: 0
+        },
+        links: {
+            twitch: "",
+            instagram: "",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            discord: ""
+        }
     }
 
 };
