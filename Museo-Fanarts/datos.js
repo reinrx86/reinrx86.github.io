@@ -298,6 +298,24 @@ const fanarts = [
     imagen: "img/Chhoomys4483.png",
     artista: "Chhoomy",
     nsfw: 0,
+},
+{
+    id: 51,
+    imagen: "img/Chhoomy483.png",
+    artista: "Chhoomy",
+    nsfw: 0,
+},
+{
+    id: 52,
+    imagen: "img/bactic-s3.png",
+    artista: "Bactic",
+    nsfw: 0,
+},
+{
+    id: 53,
+    imagen: "img/haru-1s.png",
+    artista: "Smash_totito",
+    nsfw: 0,
 }
 ];
 
