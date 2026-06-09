@@ -75,22 +75,12 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
         if (img) img.src = art.imagen;
     }
 
-    // 🔥 FORZAR COLOR TIPO PLACA
-    const titulo = clon.querySelector("h3");
-    if (titulo) {
-        titulo.style.color = "#2a1a00";
-        titulo.style.textShadow = "0 1px 0 rgba(255,255,255,0.4)";
-    }
-
-    const boton = clon.querySelector(".btn-redes");
-    if (boton) {
-        boton.style.color = "#2a1a00";
-    }
-
     clon.classList.add("expandido");
     document.body.appendChild(clon);
 
     cuadroExpandido = clon;
+
+    document.body.classList.add("no-scroll");
 
     // =========================
     // BOTÓN REDES EN CLON
@@ -117,7 +107,7 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
         ) {
             return;
         }
-
+        document.body.classList.remove("no-scroll");
         clon.remove();
         cuadroExpandido = null;
 
@@ -242,6 +232,7 @@ if (aceptarNsfw) {
         }
 
         modalNsfw.classList.add("oculto");
+        document.body.classList.add("no-scroll");
         fanartPendiente = null;
     });
 }
@@ -252,6 +243,7 @@ if (cancelarNsfw) {
 
         modalNsfw.classList.add("oculto");
         fanartPendiente = null;
+        document.body.classList.remove("no-scroll");
     });
 }
 
@@ -314,6 +306,7 @@ function abrirModal(art) {
     }
 
     modal.classList.remove("oculto");
+    document.body.classList.add("no-scroll");
 }
 
 // =========================
@@ -321,23 +314,28 @@ function abrirModal(art) {
 // =========================
 cerrarModal?.addEventListener(
     "click",
-    ()=>modal.classList.add("oculto")
+    () => {
+        modal.classList.add("oculto");
+        document.body.classList.remove("no-scroll");
+    }
 );
 
 if (modal) {
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.classList.add("oculto");
+            document.body.classList.remove("no-scroll");
         }
     });
 }
 
 if (modalNsfw) {
     modalNsfw.addEventListener("click", (e) => {
-        if (e.target === modalNsfw) {
-            modalNsfw.classList.add("oculto");
-            fanartPendiente = null;
-        }
+    if (e.target === modalNsfw) {
+        modalNsfw.classList.add("oculto");
+        fanartPendiente = null;
+        document.body.classList.remove("no-scroll");
+    }
     });
 }
 
@@ -349,8 +347,9 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
 
         if (cuadroExpandido) {
-            cuadroExpandido.remove();
-            cuadroExpandido = null;
+        cuadroExpandido.remove();
+        cuadroExpandido = null;
+        document.body.classList.remove("no-scroll");
         }
 
         [modal,modalNsfw].forEach(

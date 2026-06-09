@@ -48,6 +48,7 @@ const fanarts = {
 
     RaM_RameN_: [
         "img/ram_ramen_-1.png",
+        "img/ram_ramen_-2.png",
         {
             imagen: "http://imgfz.com/i/xbzP2XV.png",
             nsfw: 1
