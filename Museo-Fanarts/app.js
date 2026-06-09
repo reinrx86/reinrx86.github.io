@@ -3,6 +3,8 @@ const $ = id => document.getElementById(id);
 const punteros = [
     "puntero/vf22s.png",
     "puntero/vf19e.png",
+    "puntero/vf17s.png",
+    "puntero/vf11maxl.png",
 ];
 
 const punteroRandom =
