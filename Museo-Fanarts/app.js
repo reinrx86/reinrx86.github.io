@@ -6,6 +6,8 @@ const punteros = [
     "puntero/vf17s.png",
     "puntero/vf11maxl.png",
     "puntero/vf1.png",
+    "puntero/vf25.png",
+    "puntero/vf31s.png",
 ];
 
 const punteroRandom =
