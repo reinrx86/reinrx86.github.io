@@ -36,6 +36,7 @@ const fanarts = {
         "img/ibarra-13.png",
         "img/ibarra-14.png",
         "img/ibarra-15.png",
+        "img/ibarra-16.png",
     ],
 
     Feztri: [
