@@ -1,5 +1,18 @@
 const $ = id => document.getElementById(id);
 
+const punteros = [
+    "puntero/vf22s.png",
+    "puntero/vf19e.png",
+];
+
+const punteroRandom =
+    punteros[Math.floor(Math.random() * punteros.length)];
+
+document.documentElement.style.setProperty(
+    "--cursor-random",
+    `url("${punteroRandom}") 0 0`
+);
+
 const galeria = $("galeria"),
       modal = $("modal-redes"),
       redesContainer = $("redes"),
@@ -63,7 +76,7 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
     clon.addEventListener("click", (e) => {
 
         if (
-            e.target.closest(".btn-redes") ||
+            e.target.closest(".marco") ||
             e.target.closest(".info")
         ) {
             return;
@@ -71,6 +84,7 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
 
         clon.remove();
         cuadroExpandido = null;
+
     });
 }
 
@@ -138,11 +152,9 @@ function cargarFanarts() {
         // =========================
         // CLICK CUADRO
         // =========================
-        cuadro.addEventListener("click", (e) => {
+        const marco = cuadro.querySelector(".marco");
 
-            if (e.target.classList.contains("btn-redes")) {
-                return;
-            }
+        marco.addEventListener("click", () => {
 
             if (art.nsfw === 1) {
                 fanartPendiente = art;
@@ -317,9 +329,3 @@ document.addEventListener("keydown", (e) => {
 // INICIAR
 // =========================
 cargarFanarts();
-
-
-
-
-
-

@@ -37,14 +37,20 @@ header p {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 35px;
     padding: 40px;
+    justify-items: center;
 }
 
 /* CUADRO */
 .cuadro {
     position: relative;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    justify-self: center;
 }
 
 /* MARCO */
@@ -99,12 +105,22 @@ header p {
         inset 0 0 18px rgba(0,0,0,0.9);
 }
 
-/* HOVER */
-.cuadro:hover .marco {
+/* HOVER NORMAL */
+.marco:hover {
     transform: scale(1.08);
     z-index: 5;
 }
 
+.cuadro.expandido:hover .marco {
+    transform: none !important;
+    z-index: auto !important;
+}
+
+/* HOVER */
+.cuadro.expandido .marco:hover {
+    transform: none;
+    z-index: auto;
+}
 /* INFO */
 .info {
     margin-top: 12px;
@@ -151,6 +167,9 @@ header p {
     position: fixed;
     inset: 0;
 
+    width: 100vw;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,11 +177,6 @@ header p {
 
     background: rgba(0,0,0,0.9);
     z-index: 9999;
-}
-
-/* evita zoom hover cuando está expandido */
-.cuadro.expandido:hover .marco {
-    transform: none;
 }
 
 /* marco en expandido */
@@ -560,5 +574,13 @@ header p {
         grid-template-columns: 1fr 1fr;
     }
 
+}
+
+body,
+a,
+button,
+.btn-red,
+.btn-redes {
+    cursor: var(--cursor-random), pointer;
 }
 
