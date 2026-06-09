@@ -1,22 +1,53 @@
 const $ = id => document.getElementById(id);
 
 const punteros = [
-    "puntero/vf22s.png",
-    "puntero/vf19e.png",
-    "puntero/vf17s.png",
-    "puntero/vf11maxl.png",
-    "puntero/vf1.png",
-    "puntero/vf25.png",
-    "puntero/vf31s.png",
+    {
+        nombre: "VF-22S",
+        archivo: "puntero/vf22s.png"
+    },
+    {
+        nombre: "VF-19E",
+        archivo: "puntero/vf19e.png"
+    },
+    {
+        nombre: "VF-17S",
+        archivo: "puntero/vf17s.png"
+    },
+    {
+        nombre: "VF-11M",
+        archivo: "puntero/vf11maxl.png"
+    },
+    {
+        nombre: "VF-1",
+        archivo: "puntero/vf1.png"
+    },
+    {
+        nombre: "VF-25",
+        archivo: "puntero/vf25.png"
+    },
+    {
+        nombre: "VF-31S",
+        archivo: "puntero/vf31s.png"
+    }
 ];
 
-const punteroRandom =
-    punteros[Math.floor(Math.random() * punteros.length)];
+const btnCursor = document.getElementById("btn-cursor");
 
-document.documentElement.style.setProperty(
-    "--cursor-random",
-    `url("${punteroRandom}") 0 0`
-);
+let cursorActual =
+    Math.floor(Math.random() * punteros.length);
+
+function actualizarCursor() {
+
+    document.documentElement.style.setProperty(
+        "--cursor-random",
+        `url("${punteros[cursorActual].archivo}") 0 0`
+    );
+
+    btnCursor.textContent =
+        punteros[cursorActual].nombre;
+}
+
+actualizarCursor();
 
 const galeria = $("galeria"),
       modal = $("modal-redes"),
@@ -338,7 +369,8 @@ document.addEventListener("keydown", (e) => {
 // =========================
 
 const canciones = [
-    "musica/REMEMBER_16.mp3"
+    "musica/REMEMBER_16.mp3",
+    "musica/MY_FRIENDS.mp3"
 ];
 
 const audio = document.getElementById("musica");
@@ -349,11 +381,19 @@ audio.src =
 
 audio.volume = 0.4;
 
-// primer click en la página inicia la música
+// icono inicial
+btnMusica.innerHTML =
+    '<img src="icons/offsong.png" alt="Música">';
+
+// primer click inicia la música
 document.addEventListener("click", () => {
 
     if (audio.paused) {
+
         audio.play().catch(()=>{});
+
+        btnMusica.innerHTML =
+            '<img src="icons/actsong.png" alt="Música">';
     }
 
 }, { once: true });
@@ -365,22 +405,36 @@ btnMusica?.addEventListener("click", (e) => {
     if (audio.paused) {
 
         audio.play();
-        btnMusica.textContent = "🎵";
+
+        btnMusica.innerHTML =
+            '<img src="icons/actsong.png" alt="Música">';
 
     } else {
 
         audio.pause();
-        btnMusica.textContent = "🔇";
 
+        btnMusica.innerHTML =
+            '<img src="icons/offsong.png" alt="Música">';
     }
 
 });
 
-// cuando termine vuelve a reproducirse
 audio.addEventListener("ended", () => {
 
     audio.currentTime = 0;
     audio.play();
 
 });
+
+btnCursor?.addEventListener("click", () => {
+
+    cursorActual++;
+
+    if (cursorActual >= punteros.length) {
+        cursorActual = 0;
+    }
+
+    actualizarCursor();
+});
+
 cargarFanarts();
