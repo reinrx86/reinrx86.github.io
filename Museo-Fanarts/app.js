@@ -333,4 +333,54 @@ document.addEventListener("keydown", (e) => {
 // =========================
 // INICIAR
 // =========================
+// =========================
+// MÚSICA
+// =========================
+
+const canciones = [
+    "musica/REMEMBER_16.mp3"
+];
+
+const audio = document.getElementById("musica");
+const btnMusica = document.getElementById("btn-musica");
+
+audio.src =
+    canciones[Math.floor(Math.random() * canciones.length)];
+
+audio.volume = 0.4;
+
+// primer click en la página inicia la música
+document.addEventListener("click", () => {
+
+    if (audio.paused) {
+        audio.play().catch(()=>{});
+    }
+
+}, { once: true });
+
+btnMusica?.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    if (audio.paused) {
+
+        audio.play();
+        btnMusica.textContent = "🎵";
+
+    } else {
+
+        audio.pause();
+        btnMusica.textContent = "🔇";
+
+    }
+
+});
+
+// cuando termine vuelve a reproducirse
+audio.addEventListener("ended", () => {
+
+    audio.currentTime = 0;
+    audio.play();
+
+});
 cargarFanarts();
