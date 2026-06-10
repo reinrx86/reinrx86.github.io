@@ -66,7 +66,7 @@ const artistas = {
     
     "RaM_RameN_": {
         links: {
-            twitch: "",
+            twitch: "https://www.twitch.tv/ram_ramen_",
             instagram: "https://www.instagram.com/ram_ramen_/",
             reddit: "",
             x: "https://x.com/RaM_Doodles?t=uFX2TlQAcN0UC595bagXfg&s=09",
@@ -76,7 +76,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/1217905876497727501"
+            discord: ""
         }
     },
 
