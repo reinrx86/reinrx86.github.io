@@ -667,3 +667,7 @@ button,
 #btn-cursor:hover {
     transform: scale(1.08);
 }
+
+body.no-scroll {
+    overflow: hidden;
+}
