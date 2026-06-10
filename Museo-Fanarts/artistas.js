@@ -28,7 +28,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/1386597323618127972"
+            discord: ""
         }
     },
 
@@ -44,7 +44,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/574303152392765442"
+            discord: ""
         }
     },
 
@@ -60,7 +60,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/761781105421582408"
+            discord: ""
         }
     },
     
@@ -92,7 +92,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/541555110560530442"
+            discord: ""
         }
     },
 
@@ -108,7 +108,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/996241592333639691"
+            discord: ""
         }
     },
 
@@ -124,7 +124,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/1307370525450043515"
+            discord: ""
         }
     },
 
@@ -140,7 +140,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/1430836420129329173"
+            discord: ""
         }
     },
     
@@ -156,7 +156,7 @@ const artistas = {
             artstation: "",
             deviantart: "",
             furaffinity: "",
-            discord: "https://discord.com/users/1397619318077915167"
+            discord: ""
         }
     },
 
