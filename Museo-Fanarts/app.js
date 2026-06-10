@@ -1,35 +1,34 @@
-const $ = id => document.getElementById(id);
+function getScrollbarWidth() {
+    return window.innerWidth - document.documentElement.clientWidth;
+}
 
-const punteros = [
-    {
-        nombre: "VF-22S",
-        archivo: "puntero/vf22s.png"
-    },
-    {
-        nombre: "VF-19E",
-        archivo: "puntero/vf19e.png"
-    },
-    {
-        nombre: "VF-17S",
-        archivo: "puntero/vf17s.png"
-    },
-    {
-        nombre: "VF-11M",
-        archivo: "puntero/vf11maxl.png"
-    },
-    {
-        nombre: "VF-1",
-        archivo: "puntero/vf1.png"
-    },
-    {
-        nombre: "VF-25",
-        archivo: "puntero/vf25.png"
-    },
-    {
-        nombre: "VF-31S",
-        archivo: "puntero/vf31s.png"
+function actualizarScrollbarFix() {
+    const width = getScrollbarWidth();
+    document.documentElement.style.setProperty(
+        "--scrollbar-fix",
+        `${width}px`
+    );
+}
+
+function hayAlgoAbierto() {
+    return (
+        document.querySelector(".cuadro.expandido") !== null ||
+        !modal.classList.contains("oculto") ||
+        !modalNsfw.classList.contains("oculto")
+    );
+}
+
+function actualizarScroll() {
+    const activo = hayAlgoAbierto();
+
+    if (activo) {
+        actualizarScrollbarFix();
     }
-];
+
+    document.body.classList.toggle("no-scroll", activo);
+}
+
+const $ = id => document.getElementById(id);
 
 const btnCursor = document.getElementById("btn-cursor");
 
@@ -58,7 +57,6 @@ const galeria = $("galeria"),
       cancelarNsfw = $("cancelar-nsfw"),
       nombreArtistaModal = $("nombre-artista-modal");
 
-let cuadroExpandido = null;
 let fanartPendiente = null;
 
 // =========================
@@ -66,7 +64,7 @@ let fanartPendiente = null;
 // =========================
 function abrirCuadro(cuadro, art, mostrarOriginal = false) {
 
-    if (cuadroExpandido) return;
+    if (document.querySelector(".cuadro.expandido")) return;
 
     const clon = cuadro.cloneNode(true);
 
@@ -78,9 +76,7 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
     clon.classList.add("expandido");
     document.body.appendChild(clon);
 
-    cuadroExpandido = clon;
-
-    document.body.classList.add("no-scroll");
+    actualizarScroll();
 
     // =========================
     // BOTÓN REDES EN CLON
@@ -107,9 +103,8 @@ function abrirCuadro(cuadro, art, mostrarOriginal = false) {
         ) {
             return;
         }
-        document.body.classList.remove("no-scroll");
         clon.remove();
-        cuadroExpandido = null;
+        requestAnimationFrame(actualizarScroll);
 
     });
 }
@@ -232,7 +227,7 @@ if (aceptarNsfw) {
         }
 
         modalNsfw.classList.add("oculto");
-        document.body.classList.add("no-scroll");
+        actualizarScroll();
         fanartPendiente = null;
     });
 }
@@ -243,7 +238,7 @@ if (cancelarNsfw) {
 
         modalNsfw.classList.add("oculto");
         fanartPendiente = null;
-        document.body.classList.remove("no-scroll");
+        actualizarScroll();
     });
 }
 
@@ -252,7 +247,7 @@ if (cancelarNsfw) {
 // =========================
 function abrirModal(art) {
 
-    const datosArtista = artistas[art.artista];
+    const datosArtista = enlaces[art.artista];
 
     redesContainer.innerHTML = "";
 
@@ -306,7 +301,7 @@ function abrirModal(art) {
     }
 
     modal.classList.remove("oculto");
-    document.body.classList.add("no-scroll");
+    actualizarScroll();
 }
 
 // =========================
@@ -316,7 +311,7 @@ cerrarModal?.addEventListener(
     "click",
     () => {
         modal.classList.add("oculto");
-        document.body.classList.remove("no-scroll");
+        actualizarScroll();
     }
 );
 
@@ -324,7 +319,7 @@ if (modal) {
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.classList.add("oculto");
-            document.body.classList.remove("no-scroll");
+            actualizarScroll();
         }
     });
 }
@@ -334,7 +329,7 @@ if (modalNsfw) {
     if (e.target === modalNsfw) {
         modalNsfw.classList.add("oculto");
         fanartPendiente = null;
-        document.body.classList.remove("no-scroll");
+        actualizarScroll();
     }
     });
 }
@@ -348,8 +343,7 @@ document.addEventListener("keydown", (e) => {
 
         if (cuadroExpandido) {
         cuadroExpandido.remove();
-        cuadroExpandido = null;
-        document.body.classList.remove("no-scroll");
+        actualizarScroll();
         }
 
         [modal,modalNsfw].forEach(
@@ -366,11 +360,6 @@ document.addEventListener("keydown", (e) => {
 // =========================
 // MÚSICA
 // =========================
-
-const canciones = [
-    "musica/REMEMBER_16.mp3",
-    "musica/MY_FRIENDS.mp3"
-];
 
 const audio = document.getElementById("musica");
 const btnMusica = document.getElementById("btn-musica");

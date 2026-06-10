@@ -1,0 +1,66 @@
+:root {
+
+    /* =========================
+       🌌 FONDO GENERAL
+    ========================= */
+
+    --fondo: radial-gradient(
+        #1a1a1a,
+        #0d0d0d
+    );
+
+    /* =========================
+       ✨ MATERIAL DEL TEMA
+       (placas, botones y modales)
+    ========================= */
+
+    --material: linear-gradient(
+        145deg,
+        #d4af37,
+        #a67c00,
+        #f6e27a,
+        #8c6a00
+    );
+
+    /* =========================
+       🖼️ MARCOS
+    ========================= */
+
+    --marco-oscuro: #2a1f14;
+    --marco-borde: #3a2b1c;
+
+    /* Línea decorativa interior */
+    --marco-linea: linear-gradient(
+        45deg,
+        #6b4a1f,
+        #d4af37,
+        #fff2b0,
+        #a67c00,
+        #5c3b12
+    );
+
+    /* =========================
+       ✍️ TEXTOS
+    ========================= */
+
+    --color-titulo: #f5d77a;
+    --color-texto: #d8d8d8;
+    --color-secundario: #4a3200;
+    --color-texto-oscuro: #2a1a00;
+
+    /* =========================
+       🌑 SOMBRAS
+    ========================= */
+
+    --sombra-fuerte: 0 25px 50px rgba(0,0,0,0.75);
+    --sombra-suave: 0 10px 20px rgba(0,0,0,0.4);
+
+    /* =========================
+       🔲 BORDES REDONDEADOS
+    ========================= */
+
+    --borde-radio: 10px;
+
+}
+
+

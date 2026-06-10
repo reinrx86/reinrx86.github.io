@@ -1,4 +1,4 @@
-const artistas = {
+const enlaces = {
 
     "nymaruchan_art": {
         links: {
@@ -12,7 +12,7 @@ const artistas = {
             artstation: "https://www.artstation.com/nymaruchan",
             deviantart: "https://www.deviantart.com/nymaruchan",
             furaffinity: "https://www.furaffinity.net/user/nymaruchan",
-            discord: "https://discord.com/users/444728806847152128"
+            discord: ""
         }
     },
 
