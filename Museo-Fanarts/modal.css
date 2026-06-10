@@ -125,15 +125,11 @@
     height: 24px;
     object-fit: contain;
 
-    filter:
-        brightness(0)
-        saturate(100%)
-        invert(8%)
-        sepia(39%)
-        saturate(1844%)
-        hue-rotate(19deg)
-        brightness(94%)
-        contrast(101%);
+    filter: var(--icono-filtro-base);
+}
+
+#btn-musica img {
+    filter: var(--icono-filtro-base);
 }
 
 .btn-red:hover {

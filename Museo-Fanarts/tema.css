@@ -5,9 +5,23 @@
     ========================= */
 
     --fondo: radial-gradient(
-        #1a1a1a,
+        #211818,
         #0d0d0d
     );
+
+    /* =========================
+       🎨 ICONOS (FILTRO BASE)
+       → Ajustado al dorado del título (#f5d77a)
+    ========================= */
+
+    --icono-filtro-base:
+        brightness(0.45)
+        saturate(0%)
+        invert(0%)
+        sepia(1)
+        hue-rotate(15deg)
+        brightness(0.5)
+        contrast(1.8);
 
     /* =========================
        ✨ MATERIAL DEL TEMA
@@ -60,7 +74,4 @@
     ========================= */
 
     --borde-radio: 10px;
-
 }
-
-

@@ -1,6 +1,6 @@
 :root{
     /* Se mantiene solo por compatibilidad */
-    --material: var(--material);
+
     --scrollbar-fix: 0px;
 }
 
@@ -155,15 +155,7 @@ button,
     height: 30px;
     object-fit: contain;
 
-    filter:
-        brightness(0)
-        saturate(100%)
-        invert(8%)
-        sepia(39%)
-        saturate(1844%)
-        hue-rotate(19deg)
-        brightness(94%)
-        contrast(101%);
+    filter: var(--icono-filtro-base);
 }
 
 /* =========================

@@ -1,0 +1,226 @@
+/* =========================
+   MODAL BASE
+========================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* =========================
+   CONTENIDO MODAL
+========================= */
+
+.modal-contenido {
+    background: var(--material);
+    color: var(--color-texto-oscuro);
+
+    border: 2px solid var(--marco-borde);
+    border-radius: var(--borde-radio);
+
+    padding: 20px;
+
+    min-width: 320px;
+    max-width: 420px;
+
+    position: relative;
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    box-shadow: var(--sombra-suave);
+}
+
+/* nombre artista */
+.modal-contenido #nombre-artista-modal {
+    color: var(--color-texto-oscuro);
+}
+
+/* título */
+.modal-contenido h2 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--color-titulo);
+}
+
+/* subtítulo */
+.subtitulo-redes {
+    text-align: center;
+    margin: 8px 0 18px 0;
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+/* cerrar */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    font-size: 28px;
+    line-height: 1;
+
+    cursor: pointer;
+    color: var(--color-texto-oscuro);
+}
+
+.cerrar:hover {
+    color: var(--color-titulo);
+}
+
+/* =========================
+   ESTADO OCULTO
+========================= */
+
+.oculto {
+    display: none !important;
+}
+
+/* =========================
+   REDES
+========================= */
+
+.redes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.redes-container:has(.btn-red:nth-child(5)) {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* botón red */
+.btn-red {
+    width: 180px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 14px;
+
+    background: var(--material);
+    color: var(--color-texto-oscuro);
+
+    border: 2px solid var(--marco-borde);
+    border-radius: var(--borde-radio);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: var(--sombra-suave);
+
+    transition: all 0.2s ease;
+}
+
+.btn-red img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(8%)
+        sepia(39%)
+        saturate(1844%)
+        hue-rotate(19deg)
+        brightness(94%)
+        contrast(101%);
+}
+
+.btn-red:hover {
+    transform: translateY(-2px) scale(1.02);
+    color: white;
+}
+
+.btn-red:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* =========================
+   HOVER REDES ESPECÍFICOS
+========================= */
+
+.instagram:hover { background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+.twitch:hover { background: #9146ff; }
+.youtube:hover { background: #ff0000; }
+.reddit:hover { background: #ff4500; }
+.tiktok:hover { background: #111111; }
+.x:hover { background: #000000; }
+.artstation:hover { background: #13aff0; }
+.vgen:hover { background: #00a884; }
+.deviantart:hover { background: #05cc47; }
+.furaffinity:hover { background: linear-gradient(135deg,#d35400,#c49a00,#2e8b57,#1e5fbf,#6a3fb5,#c0398f); }
+.discord:hover { background: #5865f2; }
+
+/* =========================
+   NSFW MODAL
+========================= */
+
+.nsfw-preview {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    margin: 0 auto 15px auto;
+    border-radius: var(--borde-radio);
+}
+
+.nsfw-botones {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.nsfw-botones button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: var(--borde-radio);
+
+    cursor: pointer;
+
+    font-size: 0.95rem;
+    font-weight: bold;
+
+    transition: all 0.2s ease;
+}
+
+#cancelar-nsfw {
+    background: #444;
+    color: white;
+}
+
+#cancelar-nsfw:hover {
+    background: #555;
+}
+
+#aceptar-nsfw {
+    background: #b22222;
+    color: white;
+}
+
+#aceptar-nsfw:hover {
+    background: #d12f2f;
+}
+
+/* texto NSFW */
+#modal-nsfw {
+    color: var(--color-texto-oscuro);
+}
+
+#modal-nsfw p {
+    color: var(--color-texto-oscuro) !important;
+    font-size: 1.05rem;
+}
+
+#modal-nsfw button {
+    color: white !important;
+}
