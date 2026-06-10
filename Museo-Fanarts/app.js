@@ -378,7 +378,7 @@ const btnMusica = document.getElementById("btn-musica");
 audio.src =
     canciones[Math.floor(Math.random() * canciones.length)];
 
-audio.volume = 0.4;
+audio.volume = 0.1;
 
 // icono inicial
 btnMusica.innerHTML =

@@ -12,6 +12,67 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+
+:root{
+    --cursor-random:url("puntero/vf22s.png") 0 0;
+}
+
+body,
+a,
+button{
+    cursor:var(--cursor-random),pointer;
+}
+
+/* ===== BOTÓN MÚSICA ===== */
+
+#btn-musica,
+#btn-cursor{
+    position:fixed;
+    top:10px;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+    font-weight:700;
+
+    color:white;
+
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(6px);
+
+    box-shadow:0 0 15px rgba(0,0,0,.6);
+
+    z-index:9999;
+
+    transition:.2s;
+}
+
+#btn-musica{
+    right:10px;
+}
+
+#btn-cursor{
+    left:10px;
+}
+
+#btn-musica:hover,
+#btn-cursor:hover{
+    transform:scale(1.08);
+}
+
+#btn-musica img{
+    width:24px;
+    height:24px;
+}
+
 body{
     margin:0;
     font-family:'Poppins',sans-serif;
@@ -308,7 +369,20 @@ h1{
     </div>
 </div>
 
+<button id="btn-cursor">VF-22S</button>
+
+<button id="btn-musica">
+    <img src="icons/offsong.png" alt="Música">
+</button>
+
+<audio id="musica" loop></audio>
+
 <script>
+
+// =========================
+// REDDIT
+// =========================
+
 function openRedditModal(e){
     e.preventDefault();
     document.getElementById("redditModal").style.display="flex";
@@ -322,7 +396,111 @@ function goToReddit(){
     window.open("https://www.reddit.com/user/Rein_rx86/","_blank");
     closeRedditModal();
 }
-</script>
 
+// =========================
+// CURSORES
+// =========================
+
+const punteros = [
+    {nombre:"VF-22S",archivo:"puntero/vf22s.png"},
+    {nombre:"VF-19E",archivo:"puntero/vf19e.png"},
+    {nombre:"VF-17S",archivo:"puntero/vf17s.png"},
+    {nombre:"VF-11M",archivo:"puntero/vf11maxl.png"},
+    {nombre:"VF-1",archivo:"puntero/vf1.png"},
+    {nombre:"VF-25",archivo:"puntero/vf25.png"},
+    {nombre:"VF-31S",archivo:"puntero/vf31s.png"}
+];
+
+const btnCursor =
+    document.getElementById("btn-cursor");
+
+let cursorActual =
+    Math.floor(Math.random() * punteros.length);
+
+function actualizarCursor(){
+
+    document.documentElement.style.setProperty(
+        "--cursor-random",
+        `url("${punteros[cursorActual].archivo}") 0 0`
+    );
+
+    btnCursor.textContent =
+        punteros[cursorActual].nombre;
+}
+
+actualizarCursor();
+
+btnCursor.addEventListener("click",()=>{
+
+    cursorActual++;
+
+    if(cursorActual >= punteros.length){
+        cursorActual = 0;
+    }
+
+    actualizarCursor();
+});
+
+// =========================
+// MÚSICA
+// =========================
+
+const canciones = [
+    "musica/REMEMBER_16.mp3",
+    "musica/MY_FRIENDS.mp3"
+];
+
+const audio =
+    document.getElementById("musica");
+
+const btnMusica =
+    document.getElementById("btn-musica");
+
+audio.src =
+    canciones[Math.floor(Math.random()*canciones.length)];
+
+audio.volume = 0.1;
+
+document.addEventListener("click",()=>{
+
+    if(audio.paused){
+
+        audio.play().catch(()=>{});
+
+        btnMusica.innerHTML =
+            '<img src="icons/actsong.png" alt="">';
+    }
+
+},{once:true});
+
+btnMusica.addEventListener("click",(e)=>{
+
+    e.stopPropagation();
+
+    if(audio.paused){
+
+        audio.play();
+
+        btnMusica.innerHTML =
+            '<img src="icons/actsong.png" alt="">';
+
+    }else{
+
+        audio.pause();
+
+        btnMusica.innerHTML =
+            '<img src="icons/offsong.png" alt="">';
+    }
+
+});
+
+audio.addEventListener("ended",()=>{
+
+    audio.currentTime = 0;
+    audio.play();
+
+});
+
+</script>
 </body>
 </html>
