@@ -61,8 +61,8 @@ const fanarts = {
         "img/Smash_totito-3.png",
     ],
 
-    Gemenis: [
-        "img/gemenis.png",
+    IA_Gemeni: [
+        "img/iagemeni.png",
     ],    
 
     cozydaewe: [
