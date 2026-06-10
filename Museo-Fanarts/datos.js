@@ -58,12 +58,11 @@ const fanarts = {
     Smash_totito: [
         "img/Smash_totito-1.png",
         "img/Smash_totito-2.png",
-        
-        "img/Smash_totito-4.png",
+        "img/Smash_totito-3.png",
     ],
 
     Gemenis: [
-        "img/Smash_totito-3.png",
+        "img/gemenis.png",
     ],    
 
     cozydaewe: [
