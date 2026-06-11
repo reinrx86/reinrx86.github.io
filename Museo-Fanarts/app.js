@@ -177,11 +177,12 @@ function cargarFanarts() {
 
         marco.addEventListener("click", () => {
 
-            if (art.nsfw === 1) {
-                fanartPendiente = art;
-                modalNsfw.classList.remove("oculto");
-                return;
-            }
+        if (art.nsfw === 1) {
+            fanartPendiente = art;
+            modalNsfw.classList.remove("oculto");
+            actualizarScroll();
+            return;
+        }
 
             abrirCuadro(cuadro, art);
         });
