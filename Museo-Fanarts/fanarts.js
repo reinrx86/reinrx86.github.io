@@ -101,6 +101,7 @@ const fanarts = {
     Soyo__1: [
         "fanarts/soyo-1.png",
         "fanarts/soyo-2.png",
+        "fanarts/soyo-3.png",
     ],
 
 };
