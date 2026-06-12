@@ -18,6 +18,7 @@ const fanarts = {
         "fanarts/stars_bleus-1.png",
         "fanarts/stars_bleus-2.png",
         "fanarts/stars_bleus-3.png",
+        "fanarts/stars_bleus-4.png",
     ],
 
     Ibarra_Milanesa: [
@@ -37,6 +38,7 @@ const fanarts = {
         "fanarts/ibarra-14.png",
         "fanarts/ibarra-15.png",
         "fanarts/ibarra-16.png",
+        "fanarts/ibarra-17.png",
     ],
 
     Feztri: [
@@ -104,6 +106,7 @@ const fanarts = {
         "fanarts/soyo-2.png",
         "fanarts/soyo-3.png",
     ],
-
+  
+    
 };
 
