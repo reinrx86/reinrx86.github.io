@@ -104,6 +104,7 @@ const fanarts = {
         "fanarts/soyo-2.png",
         "fanarts/soyo-3.png",
     ],
-
+  
+    
 };
 
