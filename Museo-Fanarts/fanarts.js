@@ -105,6 +105,11 @@ const fanarts = {
         "fanarts/soyo-1.png",
         "fanarts/soyo-2.png",
         "fanarts/soyo-3.png",
+        "fanarts/soyo-4.png",
+    ],
+
+    jcTenryu: [
+        "fanarts/tenryu-1.png",
     ],
   
     
