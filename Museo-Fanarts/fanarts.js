@@ -47,6 +47,9 @@ const fanarts = {
         "fanarts/Feztri-3.png",
         "fanarts/Feztri-4.png",
         "fanarts/Feztri-5.png",
+        "fanarts/Feztri-6.png",
+        "fanarts/Feztri-7.png",
+        "fanarts/Feztri-8.png",
     ],
 
     RaM_RameN_: [
