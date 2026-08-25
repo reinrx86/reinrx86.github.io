@@ -159,6 +159,39 @@ const enlaces = {
             discord: ""
         }
     },
+    
+    "chiokite": {
+        links: {
+            twitch: "https://www.twitch.tv/chiokite",
+            instagram: "https://www.instagram.com/chiokite/",
+            reddit: "",
+            x: "",
+            youtube: "",
+            vgen: "https://vgen.co/Chiokite",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            furaffinity: "",
+            discord: ""
+        }
+    },
+    
+    "jcTenryu": {
+        links: {
+            twitch: "https://www.twitch.tv/jctenryu",
+            instagram: "https://www.instagram.com/tenryuartlab/",
+            reddit: "",
+            x: "",
+            youtube: "https://www.youtube.com/@jcTenryu",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            furaffinity: "",
+            discord: ""
+        }
+    },
+
 
     
     
