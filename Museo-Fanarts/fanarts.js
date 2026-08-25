@@ -118,7 +118,7 @@ const fanarts = {
     ],
 
     chiokite: [
-        "chiokite-1.png",
+        "fanarts/chiokite-1.png",
     ],
 
     
