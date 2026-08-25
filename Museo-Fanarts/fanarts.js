@@ -19,6 +19,7 @@ const fanarts = {
         "fanarts/stars_bleus-2.png",
         "fanarts/stars_bleus-3.png",
         "fanarts/stars_bleus-4.png",
+        "fanarts/stars_bleus-5.png",
     ],
 
     Ibarra_Milanesa: [
@@ -50,6 +51,7 @@ const fanarts = {
         "fanarts/Feztri-6.png",
         "fanarts/Feztri-7.png",
         "fanarts/Feztri-8.png",
+        "fanarts/Feztri-9.png",
     ],
 
     RaM_RameN_: [
@@ -114,7 +116,12 @@ const fanarts = {
     jcTenryu: [
         "fanarts/tenryu-1.png",
     ],
-  
+
+    chiokite: [
+        "chiokite-1.png",
+    ],
+
+    
     
 };
 
