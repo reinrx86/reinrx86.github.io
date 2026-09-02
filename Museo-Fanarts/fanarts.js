@@ -121,6 +121,11 @@ const fanarts = {
         "fanarts/chiokite-1.png",
     ],
 
+    koppermaximusarg: [
+        "fanarts/koppermaximusarg-1.png",
+        "fanarts/koppermaximusarg-2.png",
+        "fanarts/koppermaximusarg-3.png",
+    ],
     
     
 };
