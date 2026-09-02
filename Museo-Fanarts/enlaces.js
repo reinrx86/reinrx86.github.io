@@ -192,7 +192,21 @@ const enlaces = {
         }
     },
 
-
+    "koppermaximusarg": {
+        links: {
+            twitch: "https://www.twitch.tv/koppermaximusarg",
+            instagram: "https://www.instagram.com/realgusadri/",
+            reddit: "",
+            x: "https://x.com/KopperChad",
+            youtube: "",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            furaffinity: "",
+            discord: ""
+        }
+    },
     
     
 
