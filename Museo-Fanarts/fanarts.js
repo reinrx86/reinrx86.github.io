@@ -67,11 +67,7 @@ const fanarts = {
         "fanarts/Smash_totito-1.png",
         "fanarts/Smash_totito-2.png",
         "fanarts/Smash_totito-3.png",
-    ],
-
-    IA_Gemeni: [
-        "fanarts/iagemeni.png",
-    ],    
+    ],  
 
     cozydaewe: [
         "fanarts/cozydaewe-1.png",
