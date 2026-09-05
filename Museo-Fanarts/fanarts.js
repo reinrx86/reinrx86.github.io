@@ -1,7 +1,7 @@
 const fanarts = {
 
     nymaruchan_art: [
-        "fanarts/nymaruchan-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2000/v1788596457/nymaruchan-1v2_vl7cns.png",
         "fanarts/nymaruchan-2.png",
         "fanarts/nymaruchan-3.png",
         "fanarts/nymaruchan-4.png",
