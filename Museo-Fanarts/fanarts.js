@@ -8,10 +8,10 @@ const fanarts = {
     ],
 
     Bactic: [
-        "fanarts/bactic-1.png",
-        "fanarts/bactic-2.png",
-        "fanarts/bactic-3.png",
-        "fanarts/bactic-4.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595211/bactic-1_cpq2rf.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595211/bactic-2_ysloqu.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595210/bactic-3_de61s2.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595210/bactic-4_eygphn.png,
     ],
 
     Stars_Bleus: [
@@ -47,7 +47,7 @@ const fanarts = {
         "fanarts/Feztri-2.png",
         "fanarts/Feztri-3.png",
         "fanarts/Feztri-4.png",
-        "fanarts/Feztri-5.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595215/Feztri-5_tbxlpl.png",
         "fanarts/Feztri-6.png",
         "fanarts/Feztri-7.png",
         "fanarts/Feztri-8.png",
@@ -78,7 +78,7 @@ const fanarts = {
     ],
 
     Chhoomy: [
-        "fanarts/chhoomy-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/chhoomy-1_hi2czy.png",
         "fanarts/chhoomy-2.png",
         "fanarts/chhoomy-3.png",
         "fanarts/chhoomy-4.png",
@@ -94,7 +94,7 @@ const fanarts = {
     ],
 
     Balutcomisario: [
-        "fanarts/balutcomisario-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/balutcomisario-1_y6vmvc.png",
         "fanarts/balutcomisario-2.png",
     ],
 
