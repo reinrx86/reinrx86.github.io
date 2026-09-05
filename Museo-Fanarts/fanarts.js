@@ -43,7 +43,7 @@ const fanarts = {
     ],
 
     Feztri: [
-        "fanarts/Feztri-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/Feztri-1_xjodao.png",
         "fanarts/Feztri-2.png",
         "fanarts/Feztri-3.png",
         "fanarts/Feztri-4.png",
@@ -79,23 +79,23 @@ const fanarts = {
 
     Chhoomy: [
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/chhoomy-1_hi2czy.png",
-        "fanarts/chhoomy-2.png",
-        "fanarts/chhoomy-3.png",
-        "fanarts/chhoomy-4.png",
-        "fanarts/chhoomy-5.png",
-        "fanarts/chhoomy-6.png",
-        "fanarts/chhoomy-7.png",
-        "fanarts/chhoomy-8.png",
-        "fanarts/chhoomy-9.png",
-        "fanarts/chhoomy-10.png",
-        "fanarts/chhoomy-11.png",
-        "fanarts/chhoomy-12.png",
-        "fanarts/chhoomy-13.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/chhoomy-2_zkapod.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595208/chhoomy-3_xqv6t3.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595208/chhoomy-4_t74wju.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595208/chhoomy-5_erfa2g.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/chhoomy-6_mlaxqb.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595208/chhoomy-7_gncffb.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595208/chhoomy-8_dtoiaz.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-9_hth6nr.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595208/chhoomy-10_wjyali.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-11_skuj1i.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-12_cqgyy3.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-13_kuxsqw.png",
     ],
 
     Balutcomisario: [
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/balutcomisario-1_y6vmvc.png",
-        "fanarts/balutcomisario-2.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/balutcomisario-2_ylv93s.png",
     ],
 
     Mr_Cat_i3: [
@@ -114,7 +114,7 @@ const fanarts = {
     ],
 
     chiokite: [
-        "fanarts/chiokite-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chiokite-1_gjvd4g.png",
     ],
 
     koppermaximusarg: [
