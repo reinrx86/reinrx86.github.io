@@ -2,9 +2,9 @@ const fanarts = {
 
     nymaruchan_art: [
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2000/v1788596457/nymaruchan-1v2_vl7cns.png",
-        "fanarts/nymaruchan-2.png",
-        "fanarts/nymaruchan-3.png",
-        "fanarts/nymaruchan-4.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595186/nymaruchan-2_we8fvk.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/nymaruchan-3_uemhk9.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/nymaruchan-4_npdkht.png",
     ],
 
     Bactic: [
@@ -15,31 +15,31 @@ const fanarts = {
     ],
 
     Stars_Bleus: [
-        "fanarts/stars_bleus-1.png",
-        "fanarts/stars_bleus-2.png",
-        "fanarts/stars_bleus-3.png",
-        "fanarts/stars_bleus-4.png",
-        "fanarts/stars_bleus-5.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/stars_bleus-1_d1gar1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595182/stars_bleus-2_kjlkqn.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/stars_bleus-3_gjmrk8.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/stars_bleus-4_c0eyht.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/stars_bleus-5_d2u26f.png",
     ],
 
     Ibarra_Milanesa: [
-        "fanarts/ibarra-1.png",
-        "fanarts/ibarra-2.png",
-        "https://res.cloudinary.com/thlvsuvu/image/upload/v1788595197/ibarra-3_w2wdqg.png",
-        "fanarts/ibarra-4.png",
-        "fanarts/ibarra-5.png",
-        "fanarts/ibarra-6.png",
-        "fanarts/ibarra-7.png",
-        "fanarts/ibarra-8.png",
-        "fanarts/ibarra-9.png",
-        "fanarts/ibarra-10.png",
-        "fanarts/ibarra-11.png",
-        "fanarts/ibarra-12.png",
-        "fanarts/ibarra-13.png",
-        "fanarts/ibarra-14.png",
-        "fanarts/ibarra-15.png",
-        "fanarts/ibarra-16.png",
-        "fanarts/ibarra-17.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/ibarra-1_v5d0zz.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/ibarra-2_ai8h0a.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/ibarra-3_w2wdqg.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595196/ibarra-4_wowprs.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595194/ibarra-5_pcnrdb.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595194/ibarra-6_z9il0l.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595194/ibarra-7_c905lf.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595193/ibarra-8_fvyirw.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595193/ibarra-9_xxptee.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595193/ibarra-10_mam3sk.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595193/ibarra-11_ytorfc.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595193/ibarra-12_nyqhz1.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/ibarra-13_t8e58n.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/ibarra-14_rwhoss.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595193/ibarra-15_lb6h82.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/ibarra-16_favjn2.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595190/ibarra-17_xvrnbo.png",
     ],
 
     Feztri: [
@@ -55,18 +55,18 @@ const fanarts = {
     ],
 
     RaM_RameN_: [
-        "fanarts/ram_ramen_-1.png",
-        "fanarts/ram_ramen_-2.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/ram_ramen_-1_groc5c.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/ram_ramen_-2_o5jibb.png",
         {
-            imagen: "http://imgfz.com/i/xbzP2XV.png",
+            imagen: "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595180/ram_ramen_-3_njpulb.png",
             nsfw: 1
         }
     ],
 
     Smash_totito: [
-        "fanarts/Smash_totito-1.png",
-        "fanarts/Smash_totito-2.png",
-        "fanarts/Smash_totito-3.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595184/Smash_totito-1_gnkrhw.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595184/Smash_totito-2_kumfoc.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595183/Smash_totito-3_iptedy.jpg",
     ],  
 
     cozydaewe: [
@@ -99,18 +99,18 @@ const fanarts = {
     ],
 
     Mr_Cat_i3: [
-        "fanarts/Mr_Cat_i3-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595188/Mr_Cat_i3-1_vzipch.jpg",
     ],
 
     Soyo__1: [
-        "fanarts/soyo-1.png",
-        "fanarts/soyo-2.png",
-        "fanarts/soyo-3.png",
-        "fanarts/soyo-4.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595183/soyo-1_edngpy.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595183/soyo-2_xvnsmx.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595182/soyo-3_jukzkg.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/soyo-4_yqmaiv.jpg",
     ],
 
     jcTenryu: [
-        "fanarts/tenryu-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/tenryu-1_izifhq.jpg",
     ],
 
     chiokite: [
@@ -118,9 +118,9 @@ const fanarts = {
     ],
 
     koppermaximusarg: [
-        "fanarts/koppermaximusarg-1.png",
-        "fanarts/koppermaximusarg-2.png",
-        "fanarts/koppermaximusarg-3.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/koppermaximusarg-1_jwp076.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/koppermaximusarg-2_okabjg.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/koppermaximusarg-3_efgzfj.png",
     ],
     
     
