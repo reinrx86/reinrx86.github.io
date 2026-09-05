@@ -25,7 +25,7 @@ const fanarts = {
     Ibarra_Milanesa: [
         "fanarts/ibarra-1.png",
         "fanarts/ibarra-2.png",
-        "fanarts/ibarra-3.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/v1788595197/ibarra-3_w2wdqg.png",
         "fanarts/ibarra-4.png",
         "fanarts/ibarra-5.png",
         "fanarts/ibarra-6.png",
@@ -44,14 +44,14 @@ const fanarts = {
 
     Feztri: [
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/Feztri-1_xjodao.png",
-        "fanarts/Feztri-2.png",
-        "fanarts/Feztri-3.png",
-        "fanarts/Feztri-4.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595201/Feztri-2_zvnfzm.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595205/Feztri-3_pfkydw.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595200/Feztri-4_fbba4s.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595215/Feztri-5_tbxlpl.png",
-        "fanarts/Feztri-6.png",
-        "fanarts/Feztri-7.png",
-        "fanarts/Feztri-8.png",
-        "fanarts/Feztri-9.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595199/Feztri-6_dc8s0l.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595199/Feztri-7_wnltag.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/Feztri-8_b2bg3l.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595200/Feztri-9_bqx80b.png",
     ],
 
     RaM_RameN_: [
@@ -70,11 +70,11 @@ const fanarts = {
     ],  
 
     cozydaewe: [
-        "fanarts/cozydaewe-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595202/cozydaewe-1_yihlzl.jpg",
     ],
 
     Chroma: [
-        "fanarts/chroma-1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595206/chroma-1_afpc46.png",
     ],
 
     Chhoomy: [
