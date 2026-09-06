@@ -5,6 +5,7 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595186/nymaruchan-2_we8fvk.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/nymaruchan-3_uemhk9.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/nymaruchan-4_npdkht.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788663758/nymaruchan-5._jlty5z.jpg",
     ],
 
     Bactic: [
