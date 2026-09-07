@@ -59,7 +59,7 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/ram_ramen_-1_groc5c.jpg",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/ram_ramen_-2_o5jibb.png",
         {
-            imagen: "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595180/ram_ramen_-3_njpulb.png",
+            imagen: "http://imgfz.com/i/47rpZC6.png",
             nsfw: 1
         }
     ],
