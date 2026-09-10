@@ -1,7 +1,7 @@
 const fanarts = {
 
     nymaruchan_art: [
-        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2000/v1788596457/nymaruchan-1v2_vl7cns.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1789019245/nymaruchan-1v3_qm7mo0.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595186/nymaruchan-2_we8fvk.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/nymaruchan-3_uemhk9.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/nymaruchan-4_npdkht.png",
@@ -58,6 +58,7 @@ const fanarts = {
     RaM_RameN_: [
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/ram_ramen_-1_groc5c.jpg",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/ram_ramen_-2_o5jibb.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595209/ram_ramen_-4_igkzwk.png",
         {
             imagen: "http://imgfz.com/i/47rpZC6.png",
             nsfw: 1
