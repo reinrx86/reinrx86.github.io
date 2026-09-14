@@ -69,6 +69,7 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595184/Smash_totito-1_gnkrhw.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595184/Smash_totito-2_kumfoc.jpg",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595183/Smash_totito-3_iptedy.jpg",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1789363481/procesoharuuuuuuuuuuuuuuuuuuu_sl4teq.png",
     ],  
 
     cozydaewe: [
@@ -123,6 +124,11 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/koppermaximusarg-1_jwp076.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595192/koppermaximusarg-2_okabjg.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/koppermaximusarg-3_efgzfj.png",
+        {
+            imagen: "http://imgfz.com/i/w35OH6B.png",
+            nsfw: 1
+        }
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1789363252/koppermaximusarg-5_wxremc.png",
     ],
     
     
