@@ -94,6 +94,7 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-11_skuj1i.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-12_cqgyy3.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595207/chhoomy-13_kuxsqw.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1789533383/chhoomy-14_cyrvf5.png",
     ],
 
     Balutcomisario: [
