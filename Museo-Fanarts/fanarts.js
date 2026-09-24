@@ -131,6 +131,10 @@ const fanarts = {
             nsfw: 1
         }
     ],
+
+    AstroNavegator: [
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1790230479/astronavegator-1_vucjjk.jpg",
+    ],
     
     
 };
