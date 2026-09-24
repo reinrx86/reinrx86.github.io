@@ -207,6 +207,22 @@ const enlaces = {
             discord: ""
         }
     },
+
+    "AstroNavegator": {
+        links: {
+            twitch: "",
+            instagram: "https://www.instagram.com/cosmoswalker42?stkn=NHU4d2x0ZWtlM2h6",
+            reddit: "",
+            x: "",
+            youtube: "https://youtube.com/@cosmoswalker-o7i?si=6xPi5tys_23KRY-p",
+            vgen: "",
+            tiktok: "",
+            artstation: "",
+            deviantart: "",
+            furaffinity: "",
+            discord: ""
+        }
+    },
     
     
 
