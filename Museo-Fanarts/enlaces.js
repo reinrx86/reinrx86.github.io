@@ -216,7 +216,7 @@ const enlaces = {
             x: "",
             youtube: "https://youtube.com/@cosmoswalker-o7i?si=6xPi5tys_23KRY-p",
             vgen: "",
-            tiktok: "",
+            tiktok: "https://www.tiktok.com/@cosmos_walker?_r=1&_t=ZS-99zdSANhPQC",
             artstation: "",
             deviantart: "",
             furaffinity: "",
