@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lore Suzie en proceso</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111318;
+            color: #e6e6e6;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.75;
+        }
+
+        main {
+            width: min(1000px, 92%);
+            margin: 40px auto;
+            padding: 35px 45px;
+            background: #1a1d24;
+            border: 1px solid #30343d;
+            border-radius: 14px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+
+        .estado {
+            display: inline-block;
+            margin-bottom: 35px;
+            padding: 5px 12px;
+            border: 1px solid #555c68;
+            border-radius: 20px;
+            color: #bfc5ce;
+            font-size: 0.85rem;
+            background: #22262e;
+        }
+
+        section {
+            margin-bottom: 42px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #30343d;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 18px;
+            color: #f1f1f1;
+            font-size: 1.45rem;
+            line-height: 1.3;
+        }
+
+        p {
+            margin: 0 0 16px;
+        }
+
+        .dialogo {
+            margin: 18px 0;
+            padding: 14px 18px;
+            background: #22262e;
+            border-left: 3px solid #777e8a;
+            border-radius: 5px;
+        }
+
+        .misterio {
+            margin: 20px 0;
+            padding: 16px 18px;
+            background: #20242b;
+            border: 1px solid #353a44;
+            border-radius: 8px;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                width: 94%;
+                margin: 20px auto;
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            body {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <h1>Lore Suzie en proceso</h1>
+    <div class="estado">En proceso</div>
+
+    <section>
+        <h2>1. El encuentro</h2>
+
+        <p>Suzie es una pequeña gata de color naranja que Rein encuentra durante sus primeros años de recuperación y búsqueda de piezas.</p>
+
+        <p>En una de sus incursiones, Rein encuentra los restos de una Valkyrie extraña y comienza a revisar el lugar en busca de componentes que puedan servirle. Entre los restos descubre a una gatita extremadamente pequeña, aparentemente perdida entre los escombros.</p>
+
+        <p>No sabe de dónde salió ni cómo llegó hasta allí. Tampoco encuentra señales claras de que alguien la estuviera buscando.</p>
+
+        <p>Rein considera dejarla allí y continuar con su trabajo, pero finalmente no puede hacerlo.</p>
+
+        <p>La recoge y la lleva al hangar.</p>
+    </section>
+
+    <section>
+        <h2>2. Suzie en el hangar</h2>
+
+        <p>Desde entonces, Suzie crece junto a Rein dentro del hangar.</p>
+
+        <p>No tiene una función concreta ni fue adoptada con algún propósito especial. Simplemente terminó formando parte de su vida.</p>
+
+        <p>Normalmente se la puede encontrar durmiendo en algún rincón, recorriendo el hangar, jugando con objetos o esperando comida.</p>
+
+        <p>Con el tiempo se acostumbra completamente al lugar y a las máquinas, por lo que las Valkyries, herramientas y sistemas del hangar dejan de parecerle algo extraño.</p>
+    </section>
+
+    <section>
+        <h2>3. La relación con Rein</h2>
+
+        <p>Suzie termina siendo una de las pocas compañías constantes que Rein tiene durante sus años de aislamiento.</p>
+
+        <p>Rein suele hablarle mientras trabaja, aunque al principio lo hace más por costumbre que esperando una respuesta.</p>
+
+        <p>A veces incluso le cuenta cosas que normalmente no hablaría con otra persona.</p>
+
+        <p>El problema es que, en algunas ocasiones, Rein tiene la impresión de que Suzie realmente le responde.</p>
+
+        <p>Nunca consigue estar completamente seguro.</p>
+    </section>
+
+    <section>
+        <h2>4. ¿Suzie habla?</h2>
+
+        <p>Este es uno de los misterios que Rein nunca consigue resolver.</p>
+
+        <p>En ciertas ocasiones parece que Suzie responde de manera demasiado apropiada para ser una simple coincidencia.</p>
+
+        <p>Por ejemplo, Rein puede estar buscando algo y preguntar:</p>
+
+        <div class="dialogo">
+            <p>—¿Dónde dejé mis llaves?</p>
+
+            <p>Después de unos segundos, escucha:</p>
+
+            <p>—En la silla.</p>
+
+            <p>Rein revisa la silla y encuentra las llaves.</p>
+
+            <p>Entonces mira a Suzie.</p>
+
+            <p>—¿Suzie?</p>
+
+            <p>La gata simplemente responde:</p>
+
+            <p>—Miau.</p>
+        </div>
+
+        <p>Rein termina atribuyéndolo a una coincidencia.</p>
+
+        <p>O al exceso de café.</p>
+
+        <div class="misterio">
+            <strong>Nunca queda confirmado si Suzie realmente puede hablar o si Rein simplemente está interpretando sonidos y situaciones de manera equivocada.</strong>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Suzie y Mai</h2>
+
+        <p>Mai tampoco sabe inicialmente qué pensar de Suzie.</p>
+
+        <p>En una ocasión puede registrar una situación extraña: escucha una voz diciendo “comida” y encuentra a Suzie junto a su plato vacío.</p>
+
+        <p>Mai le da comida y posteriormente intenta determinar de dónde provino la voz.</p>
+
+        <p>Sin embargo, no encuentra ninguna fuente identificable.</p>
+
+        <p>Suzie, por supuesto, no proporciona ninguna explicación.</p>
+
+        <p>Mai termina registrándolo como una posible anomalía de audio o una interpretación incorrecta de los sensores.</p>
+
+        <p>No se lo comenta inmediatamente a Rein.</p>
+    </section>
+
+    <section>
+        <h2>6. Personalidad</h2>
+
+        <p>Suzie es una gata bastante independiente.</p>
+
+        <p>No sigue constantemente a Rein ni necesita estar siempre cerca de él. Puede pasar largos períodos haciendo su propia vida dentro del hangar.</p>
+
+        <p>Aun así, tiene la suficiente confianza con Rein como para acercarse cuando quiere comida, atención o simplemente compañía.</p>
+
+        <p>Su comportamiento es el de una gata normal, lo que hace todavía más extraño cualquier momento en el que aparentemente parece comprender o responder a una conversación.</p>
+    </section>
+
+    <section>
+        <h2>7. Su papel en la historia</h2>
+
+        <p>Suzie no participa directamente en los acontecimientos principales ni tiene una función relacionada con las Valkyries.</p>
+
+        <p>Su presencia sirve principalmente como parte de la vida cotidiana de Rein.</p>
+
+        <p>En un entorno donde Rein pasa gran parte de su vida rodeado de máquinas, piezas, herramientas y sistemas de inteligencia artificial, Suzie representa algo mucho más simple: un animal que simplemente vive allí.</p>
+
+        <p>Y precisamente por eso queda la duda de si realmente hay algo extraño en ella.</p>
+
+        <div class="misterio">
+            <strong>Por ahora, no se confirma que Suzie pueda hablar.</strong>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
