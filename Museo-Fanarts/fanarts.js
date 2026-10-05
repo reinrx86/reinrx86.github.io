@@ -53,6 +53,8 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595199/Feztri-7_wnltag.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595197/Feztri-8_b2bg3l.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595200/Feztri-9_bqx80b.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1791180308/Feztri-10_nmfj5i.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1791180308/Feztri-11_df3pq3.png",
     ],
 
     RaM_RameN_: [
