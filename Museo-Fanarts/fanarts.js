@@ -21,6 +21,8 @@ const fanarts = {
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595185/stars_bleus-3_gjmrk8.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/stars_bleus-4_c0eyht.png",
         "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1788595181/stars_bleus-5_d2u26f.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1795128996/stars_bleus-6_ygqwz1.png",
+        "https://res.cloudinary.com/thlvsuvu/image/upload/f_auto,q_auto,w_2560/v1795128995/stars_bleus-7_w14u35.jpg",
     ],
 
     Ibarra_Milanesa: [
